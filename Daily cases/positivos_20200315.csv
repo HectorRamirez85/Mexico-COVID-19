@@ -1,0 +1,54 @@
+Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso
+1,CIUDAD DE MÉXICO,M,35,2020-02-22,confirmado,Italia,2020-02-22
+2,SINALOA,M,41,2020-02-22,recuperado,Italia,2020-02-21
+3,CIUDAD DE MÉXICO,M,59,2020-02-23,confirmado,Italia,2020-02-22
+4,COAHUILA,F,20,2020-02-27,recuperado,Italia,2020-02-25
+5,CHIAPAS,F,18,2020-02-25,confirmado,Italia,2020-02-25
+6,MÉXICO,M,71,2020-02-21,recuperado,Italia,2020-02-21
+7,CIUDAD DE MÉXICO,M,46,2020-02-29,confirmado,Estados Unidos,2020-02-29
+8,QUERÉTARO,M,43,2020-03-09,confirmado,España,2020-03-06
+9,CIUDAD DE MÉXICO,M,41,2020-03-07,confirmado,Estados Unidos,2020-03-06
+10,PUEBLA,M,47,2020-03-08,confirmado,Italia,2020-03-04
+11,CIUDAD DE MÉXICO,F,30,2020-03-07,confirmado,España,2020-03-06
+12,MÉXICO,F,64,2020-03-02,confirmado,Estados Unidos,2020-02-29
+13,NUEVO LEÓN,M,57,2020-03-04,confirmado,Alemania,2020-03-03
+14,MÉXICO,F,55,2020-03-09,confirmado,España,2020-03-09
+15,DURANGO,M,58,2020-03-06,confirmado,España,2020-02-28
+16,QUERÉTARO,F,65,2020-03-10,confirmado,Contacto,NA
+17,QUERÉTARO,M,42,2020-03-05,confirmado,Italia,2020-03-05
+18,CIUDAD DE MÉXICO,M,48,2020-03-10,confirmado,España,2020-03-09
+19,CIUDAD DE MÉXICO,M,38,2020-03-10,confirmado,España,2020-03-09
+20,QUERÉTARO,F,43,2020-03-11,confirmado,Contacto,NA
+21,PUEBLA,M,31,2020-03-05,confirmado,España,2020-03-09
+22,CIUDAD DE MÉXICO,M,37,2020-03-11,confirmado,Italia,2020-03-11
+23,YUCATÁN,F,57,2020-03-07,confirmado,España,2020-03-06
+24,CIUDAD DE MÉXICO,M,52,2020-03-08,confirmado,España,2020-03-08
+25,CIUDAD DE MÉXICO,M,64,2020-03-10,confirmado,Contacto,2020-03-10
+26,CIUDAD DE MÉXICO,M,68,2020-03-04,confirmado,España,2020-03-10
+27,QUINTANA ROO,F,71,2020-03-01,confirmado,Italia,2020-03-01
+28,SAN LUIS POTOSÍ,F,53,2020-03-11,confirmado,España,2020-03-10
+29,NUEVO LEÓN,M,73,2020-03-09,confirmado,Estados Unidos,2020-03-10
+30,NUEVO LEÓN,M,30,2020-03-09,confirmado,España,2020-03-07
+31,PUEBLA,M,31,2020-03-09,confirmado,España,2020-03-08
+32,CIUDAD DE MÉXICO,F,33,2020-03-10,confirmado,Francia,2020-03-08
+33,JALISCO,F,54,2020-03-10,confirmado,España,2020-03-04
+34,JALISCO,F,64,2020-03-01,confirmado,Alemania,2020-03-09
+35,MÉXICO,M,61,2020-03-09,confirmado,Estados Unidos,2020-03-03
+36,CIUDAD DE MÉXICO,M,45,2020-03-07,confirmado,España,2020-03-09
+37,CIUDAD DE MÉXICO,F,62,2020-03-11,confirmado,Estados Unidos,2020-03-08
+38,CIUDAD DE MÉXICO,M,72,2020-03-09,confirmado,Estados Unidos,2020-03-07
+39,CIUDAD DE MÉXICO,M,41,2020-03-10,confirmado,España,2020-03-08
+40,PUEBLA,M,30,2020-03-09,confirmado,España,2020-03-09
+41,CIUDAD DE MÉXICO,M,38,2020-03-11,confirmado,Contacto,NA
+42,OAXACA,F,30,2020-03-09,confirmado,España,2020-03-09
+43,SINALOA,M,25,2020-03-09,confirmado,Estados Unidos,2020-03-13
+44,SAN LUIS POTOSÍ,F,23,2020-03-07,confirmado,España,2020-03-10
+45,QUERÉTARO,F,54,2020-03-10,confirmado,España,2020-03-10
+46,OAXACA,M,61,2020-03-10,confirmado,Estados Unidos,2020-03-10
+47,QUERÉTARO,F,55,2020-03-10,confirmado,España,2020-03-10
+48,NUEVO LEÓN,M,27,2020-03-11,confirmado,España,2020-03-13
+49,NUEVO LEÓN,M,46,2020-03-06,confirmado,Estados Unidos,2020-03-03
+50,PUEBLA,F,27,2020-03-05,confirmado,España,2020-03-09
+51,CIUDAD DE MÉXICO,F,70,2020-03-07,confirmado,Estados Unidos,2020-03-08
+52,AGUASCALIENTES,M,25,2020-03-14,confirmado,España,2020-03-12
+53,PUEBLA,F,31,2020-03-10,confirmado,Contacto,NA

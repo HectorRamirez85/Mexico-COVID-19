@@ -1,6 +1,6 @@
 # Tablas de casos sospechosos y casos confimados / Tables of suspected cases and confirmed cases. 
 
-Última actualización: 2020-03-19 T 21:00:00-06:00
+Última actualización: 2020-03-20 T 21:20:00-06:00
 
 Los datos para los cuales no se tienen las tablas fueron obtenidos de las conferencias mostradas en ```Conferencias.md```.
 

@@ -1,6 +1,6 @@
 # Base de datos de casos de COVID-19 reportados en México / Database of reported cases of COVID-19 in Mexico.
 
-Última actualización/Last update: 2020-03-19 T 21:00:00-06:00
+Última actualización/Last update: 2020-03-20 T 21:20:00-06:00
 
 ## Español
 Información de casos de COVID-19 dada a conocer por el Gobierno Federal de México desglosada por entidad.
@@ -38,7 +38,7 @@ Adicionalmente,  se tienen las siguientes columnas:
 
 ### Notas:
 
-- Un trabajo similar puede consultarse  [aquí](https://github.com/guzmart/covid19_mex).
+- Hay algunos trabajos semejantes, pero diferentes en GitHub: [1](https://github.com/guzmart/covid19_mex), [2](https://github.com/alancarrillop/COVID19_Mexico).
 - Los casos sospechosos sí se han presentado desglosados por entidad, sin embargo, a partir del 29 de febrero y hasta el 13 de marzo, no se cuentan con las tablas en las que se desglosan.
 - La cuenta de casos locales difiere de la oficial en uno dado a que en algunos CTD un paciente se registra como "Contacto/Cuba" o "Contacto". Se elige reportarlo en esta base de datos como "Contacto" (Local).
 
@@ -83,7 +83,7 @@ Aditionally, we have the following columns:
 
 ### Notes:
 
-- A similar work is available [here](https://github.com/guzmart/covid19_mex).
+- Similar, but different works are available in GitHub: [1](https://github.com/guzmart/covid19_mex), [2](https://github.com/alancarrillop/COVID19_Mexico).
 - Suspect cases have been presented by state, however, from February 29 until March 13, we don't have the tables in which they are detailed.
 - The count of local cases differs from the official one in one because in some of the CTD a patient is registered as "Contacto/Cuba" or "Contacto". We report them as "Contact" (local) in this database.
 

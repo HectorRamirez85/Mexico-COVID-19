@@ -11,3 +11,4 @@
 | 2020-03-14 | [Link](https://youtu.be/eYGgQRokyEI?t=262) |
 | 2020-03-15 | [Link](https://youtu.be/rjl26k3PhFQ?t=206) |
 | 2020-03-19 | [Link](https://youtu.be/DbDNrf4z8YM?t=519) (Mención de la muerte del primer paciente; mención del fallecimiento de un caso sospechoso) |
+| 2020-03-20 | [Link](https://youtu.be/f79tm7-c-_Q?t=126) (Mención de la entidad del segundo paciente) |

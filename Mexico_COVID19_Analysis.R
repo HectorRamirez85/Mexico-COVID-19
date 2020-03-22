@@ -3,33 +3,19 @@ require(ggplot2)
 
 #### Directories #####
 wd <- "G:\\Mi unidad\\Covid19\\Mexico-COVID-19"
+graphs <- paste0(wd,"\\Graphs")
 setwd(wd)
 
-graphs <- paste0(wd,"\\Graphs")
 
-
+#### Read table ####
 table <- read.csv("Mexico_COVID19.csv")
-
 
 dim(table)
 str(table)
 head(table)
 
-
 subtable <- table[-(1:35),] # removing the first 35 days without cases
-
-
-# plot(table$Pos, type="o", pch=19, las=1, ylab="Infected",
-#      main="Infected", xlab="time (days)")
-
 dim(subtable)
-
-setwd(graphs)
-
-## today detected
-subtable[nrow(subtable),]
-subtable$Pos[nrow(subtable)]
-
 head(subtable)
 
 
@@ -37,6 +23,8 @@ head(subtable)
 lineWd <- 2 # line width
 cxSize <- 3 # cex size
 ref <- 0.7 # vertical and horizontal reference lines
+
+setwd(graphs)
 
 
 #### Today, daily charts ####
@@ -116,7 +104,7 @@ dev.off()
 
 #### IN DEVELOPMENT ####
 
-## Adjust a Gaussian model to the total cases curve and try to predict
+#### Adjust a Gaussian model to the total cases curve and try to predict where will it be in a few days ####
 
 
 #### Temporal evolution ####

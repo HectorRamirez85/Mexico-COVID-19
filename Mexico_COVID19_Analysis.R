@@ -75,7 +75,7 @@ dev.off()
 
 #### Hoy ####
 
-pdf(paste0("MexicoInfectionHoy_",subtable$Fecha[nrow(subtable)],".pdf"), 11, 9)
+pdf(paste0("MexicoInfeccionHoy_",subtable$Fecha[nrow(subtable)],".pdf"), 11, 9)
 par(mar=c(7,7,7,7))
 print(paste("Día", nrow(subtable)-1, "desde el 1er. caso detectado")) # Día desde el primer caso detectado
 

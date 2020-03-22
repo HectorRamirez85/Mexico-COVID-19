@@ -1,6 +1,9 @@
 # Base de datos de casos de COVID-19 reportados en México / Database of reported cases of COVID-19 in Mexico.
 
-Última actualización/Last update: 2020-03-20 T 21:20:00-06:00
+Última actualización/Last update: 2020-03-21 T 19:45:00-06:00
+
+Información del sistema hospitalario en México [aquí](http://www.dgis.salud.gob.mx/contenidos/publicaciones/p_bie_gobmx.html).
+Information of the mexican hospitalary system [here](http://www.dgis.salud.gob.mx/contenidos/publicaciones/p_bie_gobmx.html).
 
 ## Español
 Información de casos de COVID-19 dada a conocer por el Gobierno Federal de México desglosada por entidad.
@@ -8,7 +11,7 @@ Información de casos de COVID-19 dada a conocer por el Gobierno Federal de Méx
 La información es extraída de los Comunicados Técnicos Diarios (CTD) publicados por la Secretaría de Salud Federal.
 
 Los datos por día y estado están contenidos en ```Mexico_COVID19.ods```. Un archivo ```.csv``` con datos idénticos se proporciona por conveniencia.
-Las columnas están nombradas de acuerdo al siguiente formato: ```EDO_{key}```. ```EDO``` es el código ISO de tres letras del estado. ```key``` puede tener los siguientes valores:
+Las columnas están nombradas de acuerdo al siguiente formato: ```EDO_{key}```. ```EDO``` es el [código ISO de tres letras del estado](https://www.iso.org/obp/ui/#iso:code:3166:MX). ```key``` puede tener los siguientes valores:
 
 - ```I```: representa el número de casos confirmados(°) importados del extranjero al estado.
 - ```L```: representa el número de casos confirmados locales dados en el estado.
@@ -17,7 +20,7 @@ Las columnas están nombradas de acuerdo al siguiente formato: ```EDO_{key}```. 
 - ```D```: representa el número total de casos confirmados fallecidos en el estado.
 
 Adicionalmente,  se tienen las siguientes columnas:
- 
+
 - ```Fecha```: fecha dada en formato ISO.
 - ```Pos_I```: es el número total de casos confirmados importados del extranjero al país. (Suma de las columnas ```EDO_I```.)
 - ```Pos_L```: es el número total de casos confirmados locales dados en el país. (Suma de las columnas ```EDO_L```.)
@@ -42,7 +45,7 @@ Adicionalmente,  se tienen las siguientes columnas:
 - Los casos sospechosos sí se han presentado desglosados por entidad, sin embargo, a partir del 29 de febrero y hasta el 13 de marzo, no se cuentan con las tablas en las que se desglosan.
 - La cuenta de casos locales difiere de la oficial en uno dado a que en algunos CTD un paciente se registra como "Contacto/Cuba" o "Contacto". Se elige reportarlo en esta base de datos como "Contacto" (Local).
 
-¡Cualquier contribución  es bienvenida! 
+¡Cualquier contribución  es bienvenida!
 Contacto: carranco[punto]sga[arroba]ciencias[punto]unam[punto]mx
 
 ## English
@@ -53,7 +56,7 @@ The information is extracted of the Daily Technical Communiqués (CTD by its acr
 
 The data by day and state are contained in ```Mexico_COVID19.ods```. A ```.csv``` file with identical data is uploaded for convenience.
 
-The columns are named according to the following format: ```EDO_{key}```. ```EDO``` is the three-letter ISO code for the state. ```key``` takes the following values:
+The columns are named according to the following format: ```EDO_{key}```. ```EDO``` is the [three-letter ISO code for the state](https://www.iso.org/obp/ui/#iso:code:3166:MX). ```key``` takes the following values:
 
 - ```I```: represents the number of confirmed(°) cases, imported from abroad to the state.
 - ```L```: represents the number of confirmed local cases in the state.
@@ -62,7 +65,7 @@ The columns are named according to the following format: ```EDO_{key}```. ```EDO
 - ```D```: represents the number of confirmed cases that have died in the state.
 
 Aditionally, we have the following columns:
- 
+
 - ```Fecha```: date given in ISO format.
 - ```Pos_I```:  is the total number of confirmed cases, imported from abroad into the country. (Sum of the ```EDO_I``` columns.)
 - ```Pos_L```: is the total number of confirmed local cases. (Sum of the ```EDO_L``` columns.)
@@ -89,6 +92,3 @@ Aditionally, we have the following columns:
 
 Any contribution is welcome!
 Contact: carranco[dot]sga[at]ciencias[dot]unam[dot]mx
-
-
-

@@ -32,10 +32,10 @@ pdf(paste0("MexicoInfectionToday_",subtable$Fecha[nrow(subtable)],".pdf"), 11, 9
 par(mar=c(7,7,7,7))
 print(paste("Day", nrow(subtable)-1, "since 1st. detected case")) # Day since the first detected case
 
-cases <- c("Total" = "black", "Imported" = "blue", "Locals" = "darkgreen", "Deaths" = "red", "Recovered" = "purple") 
+cases <- c("Total" = "black", "Imported" = "blue", "Local" = "darkgreen", "Deaths" = "red", "Recovered" = "purple") 
 ggplot(subtable) +
   # ylim(c(0,1000)) +
-  ggtitle(paste("Covid-19 in Mexico", subtable$Fecha[nrow(subtable)])) +
+  ggtitle(paste("COVID-19 in Mexico", subtable$Fecha[nrow(subtable)])) +
   geom_line(mapping=aes(x=Fecha, y=Pos, group=1, color="Total"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Pos, group=1, color="Total"), cex=cxSize) +
   geom_hline(yintercept = 100, lty=2, size=ref) +
@@ -45,8 +45,8 @@ ggplot(subtable) +
   geom_point(mapping=aes(x=Fecha, y=Deceased, group=1, color="Deaths"), cex=cxSize) +
   geom_line(mapping=aes(x=Fecha, y=Pos_I, group=1, color="Imported"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Pos_I, group=1, color="Imported"), cex=cxSize) +
-  geom_line(mapping=aes(x=Fecha, y=Pos_L, group=1, color="Locals"), size=lineWd) +
-  geom_point(mapping=aes(x=Fecha, y=Pos_L, group=1, color="Locals"), cex=cxSize) +
+  geom_line(mapping=aes(x=Fecha, y=Pos_L, group=1, color="Local"), size=lineWd) +
+  geom_point(mapping=aes(x=Fecha, y=Pos_L, group=1, color="Local"), cex=cxSize) +
   # geom_vline(xintercept=which(subtable$Fecha == "2020-03-13"), col="black", lty=2, size=ref) + # day with the first local infected person
   # geom_vline(xintercept=which(subtable$Fecha == "2020-03-19"), col="red", lty=2, size=ref) + # day with the first dead person
   theme(axis.text = element_text(size=18),
@@ -58,7 +58,7 @@ ggplot(subtable) +
         # legend.title = element_text(size=24,face="bold")) +
   scale_color_manual(values = cases, limits = names(cases)) +
   labs(x = "Date",
-       y = "Detected cases")
+       y = "Confirmed cases")
 dev.off()
 
 
@@ -69,13 +69,13 @@ par(mar=c(7,7,7,7))
 print(paste("Día", nrow(subtable)-1, "desde el 1er. caso detectado")) # Día desde el primer caso detectado
 
 
-casos <- c("Total" = "black", "Importados" = "blue", "Locales" = "darkgreen", "Decesos" = "red", "Recuperados" = "purple") 
+casos <- c("Totales" = "black", "Importados" = "blue", "Locales" = "darkgreen", "Decesos" = "red", "Recuperados" = "purple") 
 ggplot(subtable) +
   # ylim(c(0,1000)) +
   # ggtitle("Casos detectados de Covid-19 en México") +
-  ggtitle(paste("Covid-19 en México", subtable$Fecha[nrow(subtable)])) +
-  geom_line(mapping=aes(x=Fecha, y=Pos, group=1, color="Total"), size=lineWd) +
-  geom_point(mapping=aes(x=Fecha, y=Pos, group=1, color="Total"), cex=cxSize) +
+  ggtitle(paste("COVID-19 en México", subtable$Fecha[nrow(subtable)])) +
+  geom_line(mapping=aes(x=Fecha, y=Pos, group=1, color="Totales"), size=lineWd) +
+  geom_point(mapping=aes(x=Fecha, y=Pos, group=1, color="Totales"), cex=cxSize) +
   geom_hline(yintercept = 100, lty=2, size=ref) +
   geom_line(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recuperados"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recuperados"), cex=cxSize) +
@@ -95,7 +95,7 @@ ggplot(subtable) +
         legend.title = element_blank()) +
   scale_color_manual(values = casos, limits = names(casos)) +
   labs(x = "Fecha",
-       y = "Casos detectados")
+       y = "Casos confirmados")
 dev.off()
 
 
@@ -103,6 +103,10 @@ dev.off()
 
 
 #### IN DEVELOPMENT ####
+
+subtable$CMX[nrow(subtable)] / subtable$Pos[nrow(subtable)] * 100
+
+
 
 #### Adjust a Gaussian model to the total cases curve and try to predict where will it be in a few days ####
 

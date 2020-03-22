@@ -39,19 +39,20 @@ cxSize <- 3 # cex size
 ref <- 0.7 # vertical and horizontal reference lines
 
 
-
-#### Today ####
+#### Today, daily charts ####
 pdf(paste0("MexicoInfectionToday_",subtable$Fecha[nrow(subtable)],".pdf"), 11, 9)
 par(mar=c(7,7,7,7))
 print(paste("Day", nrow(subtable)-1, "since 1st. detected case")) # Day since the first detected case
 
-cases <- c("Total" = "black", "Imported" = "blue", "Locals" = "darkgreen", "Deaths" = "red") 
+cases <- c("Total" = "black", "Imported" = "blue", "Locals" = "darkgreen", "Deaths" = "red", "Recovered" = "purple") 
 ggplot(subtable) +
   # ylim(c(0,1000)) +
   ggtitle(paste("Covid-19 in Mexico", subtable$Fecha[nrow(subtable)])) +
   geom_line(mapping=aes(x=Fecha, y=Pos, group=1, color="Total"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Pos, group=1, color="Total"), cex=cxSize) +
   geom_hline(yintercept = 100, lty=2, size=ref) +
+  geom_line(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recovered"), size=lineWd) +
+  geom_point(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recovered"), cex=cxSize) +
   geom_line(mapping=aes(x=Fecha, y=Deceased, group=1, color="Deaths"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Deceased, group=1, color="Deaths"), cex=cxSize) +
   geom_line(mapping=aes(x=Fecha, y=Pos_I, group=1, color="Imported"), size=lineWd) +
@@ -73,16 +74,14 @@ ggplot(subtable) +
 dev.off()
 
 
-#### Hoy ####
+#### Hoy, gráficos diarios ####
 
 pdf(paste0("MexicoInfeccionHoy_",subtable$Fecha[nrow(subtable)],".pdf"), 11, 9)
 par(mar=c(7,7,7,7))
 print(paste("Día", nrow(subtable)-1, "desde el 1er. caso detectado")) # Día desde el primer caso detectado
 
-# a <- paste("Total =", subtable$Pos[nrow(subtable)])
 
-
-casos <- c("Total" = "black", "Importados" = "blue", "Locales" = "darkgreen", "Decesos" = "red") 
+casos <- c("Total" = "black", "Importados" = "blue", "Locales" = "darkgreen", "Decesos" = "red", "Recuperados" = "purple") 
 ggplot(subtable) +
   # ylim(c(0,1000)) +
   # ggtitle("Casos detectados de Covid-19 en México") +
@@ -90,6 +89,8 @@ ggplot(subtable) +
   geom_line(mapping=aes(x=Fecha, y=Pos, group=1, color="Total"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Pos, group=1, color="Total"), cex=cxSize) +
   geom_hline(yintercept = 100, lty=2, size=ref) +
+  geom_line(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recuperados"), size=lineWd) +
+  geom_point(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recuperados"), cex=cxSize) +
   geom_line(mapping=aes(x=Fecha, y=Deceased, group=1, color="Decesos"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Deceased, group=1, color="Decesos"), cex=cxSize) +
   geom_line(mapping=aes(x=Fecha, y=Pos_I, group=1, color="Importados"), size=lineWd) +
@@ -115,6 +116,7 @@ dev.off()
 
 #### IN DEVELOPMENT ####
 
+## Adjust a Gaussian model to the total cases curve and try to predict
 
 
 #### Temporal evolution ####

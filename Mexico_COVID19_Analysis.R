@@ -2,7 +2,10 @@
 require(ggplot2)
 
 #### Directories #####
-setwd("G:\\Mi unidad\\Covid19\\Mexico-COVID-19")
+wd <- "G:\\Mi unidad\\Covid19\\Mexico-COVID-19"
+set(wd)
+
+graphs <- paste0(wd,"\\Graphs")
 
 
 table <- read.csv("Mexico_COVID19.csv")
@@ -21,6 +24,8 @@ subtable <- table[-(1:35),] # removing the first 35 days without cases
 
 dim(subtable)
 
+setwd(graphs)
+
 pdf("MexicoInfectionEvolution.pdf",11,9)
 for(i in 1:nrow(subtable)){
   print(i)
@@ -36,7 +41,7 @@ for(i in 1:nrow(subtable)){
     geom_point(mapping=aes(x=Fecha, y=Deceased, group=1), col="red") +
     geom_line(mapping=aes(x=Fecha, y=Pos_I, group=1), col="blue") +
     geom_point(mapping=aes(x=Fecha, y=Pos_I, group=1), col="blue") +
-    geom_line(mapping=aes(x=Fecha, y=Pos_L, group=1), col="darkgreen") +
+    geom_line(mapping=aes(x=Fecha, y=Pos_L, gsroup=1), col="darkgreen") +
     geom_point(mapping=aes(x=Fecha, y=Pos_L, group=1), col="darkgreen") +
     geom_vline(xintercept=which(subtable$Fecha == "2020-03-13"), col="black", lty=2) # day with the first local infected person
 }
@@ -58,7 +63,8 @@ ggplot(subtable) +
   geom_point(mapping=aes(x=Fecha, y=Pos_I, group=1), col="blue") +
   geom_line(mapping=aes(x=Fecha, y=Pos_L, group=1), col="darkgreen") +
   geom_point(mapping=aes(x=Fecha, y=Pos_L, group=1), col="darkgreen") +
-  geom_vline(xintercept=which(subtable$Fecha == "2020-03-13"), col="black", lty=2) # day with the first local infected person
-
+  geom_vline(xintercept=which(subtable$Fecha == "2020-03-13"), col="black", lty=2) + # day with the first local infected person
+  scale_fill_discrete(name="Mexico", labels=c("A", "B", "C","D"))
+  
 dev.off()
 

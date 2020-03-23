@@ -58,7 +58,7 @@ function fila_actualización(fecha, positivos_reportados, sospechosos_reportados
     pushfirst!(fila, fecha[1:4]*"-"*fecha[5:6]*"-"*fecha[7:8])
 
     #Agrega comas para el csv y lo junta todo en un string
-    fila_csv = prod(fila.*",")
+    fila_csv = prod(fila[1:(end - 1)].*",")*fila[end]
 
     #Agrega el resultado al csv acumulativo:
     open("Mexico_COVID19.csv", "a") do io

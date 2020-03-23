@@ -1,6 +1,6 @@
 # Base de datos de casos de COVID-19 reportados en México / Database of reported cases of COVID-19 in Mexico.
 
-Última actualización/Last update: 2020-03-21 T 19:45:00-06:00
+Última actualización/Last update: 2020-03-22 T 19:26:00-06:00
 
 Información del sistema hospitalario en México [aquí](http://www.dgis.salud.gob.mx/contenidos/publicaciones/p_bie_gobmx.html).
 Information of the mexican hospitalary system [here](http://www.dgis.salud.gob.mx/contenidos/publicaciones/p_bie_gobmx.html).

@@ -28,7 +28,7 @@ setwd(graphs)
 
 
 #### Today, daily charts ####
-pdf(paste0("MexicoInfectionToday_",subtable$Fecha[nrow(subtable)],".pdf"), 11, 9)
+pdf(paste0("MexicoInfectionToday_",subtable$Fecha[nrow(subtable)],".pdf"), 13, 9)
 par(mar=c(7,7,7,7))
 print(paste("Day", nrow(subtable)-1, "since 1st. detected case")) # Day since the first detected case
 
@@ -64,26 +64,26 @@ dev.off()
 
 #### Hoy, gráficos diarios ####
 
-pdf(paste0("MexicoInfeccionHoy_",subtable$Fecha[nrow(subtable)],".pdf"), 11, 9)
+pdf(paste0("MexicoInfeccionHoy_",subtable$Fecha[nrow(subtable)],".pdf"), 13, 9)
 par(mar=c(7,7,7,7))
 print(paste("Día", nrow(subtable)-1, "desde el 1er. caso detectado")) # Día desde el primer caso detectado
 
 
-casos <- c("Totales" = "black", "Importados" = "blue", "Locales" = "darkgreen", "Decesos" = "red", "Recuperados" = "purple") 
+casos <- c("Totales" = "black", "Importados" = "blue", "Locales" = "darkgreen", "Defunciones" = "red", "Recuperados" = "purple") 
 ggplot(subtable) +
   # ylim(c(0,1000)) +
   # ggtitle("Casos detectados de Covid-19 en México") +
   ggtitle(paste("COVID-19 en México", subtable$Fecha[nrow(subtable)])) +
-  geom_line(mapping=aes(x=Fecha, y=Pos, group=1, color="Totales"), size=lineWd) +
+  # geom_line(mapping=aes(x=Fecha, y=Pos, group=1, color="Totales"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Pos, group=1, color="Totales"), cex=cxSize) +
   geom_hline(yintercept = 100, lty=2, size=ref) +
-  geom_line(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recuperados"), size=lineWd) +
+  # geom_line(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recuperados"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recuperados"), cex=cxSize) +
-  geom_line(mapping=aes(x=Fecha, y=Deceased, group=1, color="Decesos"), size=lineWd) +
-  geom_point(mapping=aes(x=Fecha, y=Deceased, group=1, color="Decesos"), cex=cxSize) +
-  geom_line(mapping=aes(x=Fecha, y=Pos_I, group=1, color="Importados"), size=lineWd) +
+  # geom_line(mapping=aes(x=Fecha, y=Deceased, group=1, color="Defunciones"), size=lineWd) +
+  geom_point(mapping=aes(x=Fecha, y=Deceased, group=1, color="Defunciones"), cex=cxSize) +
+  # geom_line(mapping=aes(x=Fecha, y=Pos_I, group=1, color="Importados"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Pos_I, group=1, color="Importados"), cex=cxSize) +
-  geom_line(mapping=aes(x=Fecha, y=Pos_L, group=1, color="Locales"), size=lineWd) +
+  # geom_line(mapping=aes(x=Fecha, y=Pos_L, group=1, color="Locales"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Pos_L, group=1, color="Locales"), cex=cxSize) +
   # geom_vline(xintercept=which(subtable$Fecha == "2020-03-13"), col="black", lty=2, size=ref) + # day with the first local infected person
   # geom_vline(xintercept=which(subtable$Fecha == "2020-03-19"), col="red", lty=2, size=ref) + # day with the first dead person

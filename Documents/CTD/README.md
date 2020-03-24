@@ -2,7 +2,7 @@
 
 [Listado](https://www.gob.mx/salud/documentos/informacion-internacional-y-nacional-sobre-nuevo-coronavirus-2019-ncov)
 
-Última actualización: 2020-03-22 T 19:26:00-06:00
+Última actualización: 2020-03-23 T 19:40:00-06:00
 
 | Fecha               | Link        |
 | ------------------- | ----------  |

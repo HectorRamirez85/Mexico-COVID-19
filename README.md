@@ -1,9 +1,13 @@
 # Base de datos de casos de COVID-19 reportados en México / Database of reported cases of COVID-19 in Mexico.
 
-Última actualización/Last update: 2020-03-22 T 19:26:00-06:00
+Última actualización/Last update: 2020-03-23 T 19:40:00-06:00
+
+**Nota/Note:** Recovered cases are not provided in the CTD for 2020-03-23.
 
 Información del sistema hospitalario en México [aquí](http://www.dgis.salud.gob.mx/contenidos/publicaciones/p_bie_gobmx.html).
 Information of the mexican hospitalary system [here](http://www.dgis.salud.gob.mx/contenidos/publicaciones/p_bie_gobmx.html).
+Dataset de latinoamética [aquí](https://github.com/DataScienceResearchPeru/covid-19_latinoamerica).
+Latin american dataset [here](https://github.com/DataScienceResearchPeru/covid-19_latinoamerica).
 
 ## Español
 Información de casos de COVID-19 dada a conocer por el Gobierno Federal de México desglosada por entidad.

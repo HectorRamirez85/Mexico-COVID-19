@@ -59,7 +59,7 @@ function limpiar_fila(string)
 end
 
 #Función principal que toma un nombre de archivo y escribe el archivo .csv correspondiente:
-function scraping(archivo)
+function scraping(archivo, sospechosos = false)
 
   #Remueve la extensión para nombrar el .csv apropiadamente
   nombre = replace(archivo, r".pdf" => "")
@@ -70,7 +70,11 @@ function scraping(archivo)
   #Escribe el archivo
   open(nombre*".csv", "w") do io
 
-    write(io, "Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso\n")
+    if sospechosos
+      write(io, "Número_caso,Estado,Localidad,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso\n")
+    else
+      write(io, "Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso\n")
+    end
 
     for caso in casos
 

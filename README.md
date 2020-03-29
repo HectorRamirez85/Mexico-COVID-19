@@ -1,6 +1,6 @@
 # Base de datos de casos de COVID-19 reportados en México / Database of reported cases of COVID-19 in Mexico.
 
-Última actualización/Last update: 2020-03-26 T 19:55:00-06:00
+Última actualización/Last update: 2020-03-28 T 20:15:00-06:00
 
 **Nota/Note:**
 Los casos recuperados ya no se listan en el CTD desde el 2020-03-23.

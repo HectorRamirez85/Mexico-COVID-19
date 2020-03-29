@@ -71,7 +71,7 @@ function scraping(archivo, sospechosos = false)
   open(nombre*".csv", "w") do io
 
     if sospechosos
-      write(io, "Número_caso,Estado,Localidad,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso\n")
+      write(io, "Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso\n")
     else
       write(io, "Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso\n")
     end

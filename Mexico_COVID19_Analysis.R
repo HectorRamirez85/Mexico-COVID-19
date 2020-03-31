@@ -69,7 +69,7 @@ dev.off()
 
 #### Hoy, gráficos diarios ####
 
-# pdf(paste0("MexicoInfeccionHoy_",subtable$Fecha[nrow(subtable)],".pdf"), 13, 9)
+pdf(paste0("MexicoInfeccionHoy_",subtable$Fecha[nrow(subtable)],".pdf"), 13, 9)
 par(mar=c(7,7,7,7))
 print(paste("Día", nrow(subtable)-1, "desde el 1er. caso detectado")) # Día desde el primer caso detectado
 
@@ -101,7 +101,7 @@ ggplot(subtable) +
   scale_color_manual(values = casos, limits = names(casos)) +
   labs(x = "Fecha",
        y = "Casos confirmados")
-# dev.off()
+dev.off()
 
 
 

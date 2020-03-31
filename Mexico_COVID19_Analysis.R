@@ -2,7 +2,7 @@
 require(ggplot2)
 
 #### Directories #####
-wd <- "G:\\Mi unidad\\Covid19\\Mexico-COVID-19"
+wd <- "G:\\Mi unidad\\COVID-19\\Mexico-COVID-19"
 graphs <- paste0(wd,"\\Graphs")
 setwd(wd)
 
@@ -14,10 +14,15 @@ dim(table)
 str(table)
 head(table)
 
-subtable <- table[-(1:35),] # removing the first 35 days without cases
+subtable <- table[-c(1:35),] # removing the first 35 days without cases
 dim(subtable)
 head(subtable)
 
+
+#### Data preparation #####
+totalCases <- subtable$Pos # number of total confirmed cases
+totalCases
+newCases <- subtable$Pos[nrow(subtable)] - subtable$Pos[nrow(subtable)-1]
 
 ##### Parameters ####
 lineWd <- 2 # line width
@@ -64,7 +69,7 @@ dev.off()
 
 #### Hoy, gráficos diarios ####
 
-pdf(paste0("MexicoInfeccionHoy_",subtable$Fecha[nrow(subtable)],".pdf"), 13, 9)
+# pdf(paste0("MexicoInfeccionHoy_",subtable$Fecha[nrow(subtable)],".pdf"), 13, 9)
 par(mar=c(7,7,7,7))
 print(paste("Día", nrow(subtable)-1, "desde el 1er. caso detectado")) # Día desde el primer caso detectado
 
@@ -96,7 +101,7 @@ ggplot(subtable) +
   scale_color_manual(values = casos, limits = names(casos)) +
   labs(x = "Fecha",
        y = "Casos confirmados")
-dev.off()
+# dev.off()
 
 
 

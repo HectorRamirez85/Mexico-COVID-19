@@ -52,7 +52,7 @@ function fila_actualización(fecha, positivos_reportados, sospechosos_reportados
     acumulado_país = sum(casos_estados)
 
     #Calcula el número total de muestras analizadas.
-    total_tests = acumulado_país[1] + acumulado_país[4] + negativos_reportados + número_IRAG
+    total_tests = acumulado_país[4] + negativos_reportados + número_IRAG
     #Genera un vector con el número de casos positivos importados, locales, total de casos; positivos reportados, sospechosos reportados, negativos reportados, número de tests IRAG, número total de pruebas, número de casos recuperados y número de casos fallecidos (para mantener el orden de la tabla original):
     reporte_país = [acumulado_país[1:4]..., positivos_reportados, sospechosos_reportados, negativos_reportados, número_IRAG, total_tests, acumulado_país[5:6]...]
 

@@ -1,6 +1,8 @@
 # Base de datos de casos de COVID-19 reportados en México / Database of reported cases of COVID-19 in Mexico.
 
-Última actualización/Last update: 2020-03-28 T 20:15:00-06:00
+Última actualización/Last update: 2020-03-29 T 19:30:00-06:00
+
+## Miscelánea/Random tidbits:
 
 **Nota/Note:**
 Los casos recuperados ya no se listan en el CTD desde el 2020-03-23.
@@ -8,6 +10,11 @@ Los casos recuperados ya no se listan en el CTD desde el 2020-03-23.
 
 Recovered cases are no longer  provided in the CTD for 2020-03-23 onwards.
 ***No* particular patient status (recovered/deceased) will be updated after 2020-03-23.**
+
+**Nota/Note:**
+2020-03-29: El número de pruebas realizadas en el país se corrigió retroactivamente para no incluir casos sospechosos, puesto que no se conoce con certeza si en realidad les fueron realizadas pruebas de laboratorio. Ahora sólo consiste de la suma del número de casos positivos con el número de casos negativos y las pruebas de SISVEFLU/IRAG para SARS-CoV-2. *Gracias a Luis López Martinelli por su observación*.
+
+2020-03-29: The number of total tests done in the country was retroactively changed as to not include suspect cases, because it is not known certainly if they were lab-tested. The number currently is the sum of the number of positive cases with the number of negative cases and the random tests of samples coming from SISVEFLU/IRAG for SARS-CoV-2. *Special thanks to Luis López Martinelli  for his observation*.
 
 Información del sistema hospitalario en México [aquí](http://www.dgis.salud.gob.mx/contenidos/publicaciones/p_bie_gobmx.html).
 Information of the mexican hospitalary system [here](http://www.dgis.salud.gob.mx/contenidos/publicaciones/p_bie_gobmx.html).
@@ -20,6 +27,9 @@ Visualization of the reported data by Joel Ricci-López (@jRicciL) [here](https:
 
 Mapa oficial de la DGE (Dirección General de Epidemiología) [aquí](http://ncov.sinave.gob.mx/mapa.aspx).
 Official map of the DGE (General Directorate of Epidemiology by its acronym in Spanish) [here](http://ncov.sinave.gob.mx/mapa.aspx).
+
+Un tablero bastante completo sobre el panorama en el país está disponible [aquí](http://covidatos.mx/)
+A really complete dashboard with a national overview is available [here](http://covidatos.mx/)
 
 ## Español
 Información de casos de COVID-19 dada a conocer por el Gobierno Federal de México desglosada por entidad.
@@ -47,7 +57,7 @@ Adicionalmente,  se tienen las siguientes columnas:
 - ```Susp_rep```: es el número total de casos sospechosos en el país, reportados oficialmente. ( *Sospechosos* en el CTD.)
 - ```Neg_rep```: es el número total de casos descartados (por laboratorio) en el país, reportados oficialmente. ( *Negativos* en el CTD.)
 - ```IRAG_Test```: es el número total de muestras de pacientes al azar(°°°) cuya muestra fue analizada en busca de SARS-CoV-2. (Reportado en el CTD a partir del 25 de febrero, anunciado el 23 de febrero.)
-- ```Tested_total```: es el número total de pruebas realizadas en el país, según datos oficiales. (Suma de las columnas ```Pos```, ```Susp_rep```, ```Neg_rep``` e ```IRAG_Test```.)
+- ```Tested_total```: es el número total de pruebas realizadas en el país, según datos oficiales. (Suma de las columnas ```Pos```, ```Neg_rep``` e ```IRAG_Test```.)
 - ```Recovered```: es el número total de casos confirmados recuperados en el país. (Suma de las columnas ```EDO_R```.)
 No hay números exactos reportados a partir del 23 de marzo.
 - ```Deceased```: es el número total de casos confirmados fallecidos en el país. (Suma de las columnas ```EDO_D```.)
@@ -57,6 +67,7 @@ No hay números exactos reportados a partir del 23 de marzo.
 (°°) Caso recuperado consiste en un paciente que no presenta sintomatología y cuya segunda muestra ha dado negativo a la presencia de SARS-CoV-2.
 
 (°°°) Pacientes no sospechosos de COVID-19 (i.e. que visitaron un país con tranmisión comunitaria activa y presentan sintomatología o que son contactos de pacientes con COVID-19) con sintomatología de enfermedad respiratoria aguda de etiología desconocida analizada al azar para detección de SARS-CoV-2.
+(Nota: Esta definición cambió desde al menos el 23 de marzo; el número de estas pruebas se ha mantenido constante desde el 11 de marzo.)
 
 ### Notas:
 
@@ -88,7 +99,6 @@ Aditionally, we have the following columns:
 
 - ```Fecha```: date given in ISO format.
 - ```Susp```: is the total number of suspect cases in the country. (It differs in one from the official tally on March 23 because patient 576 has no state or municipality registered.)
-in ISO format.
 - ```Pos_I```:  is the total number of confirmed cases, imported from abroad into the country. (Sum of the ```EDO_I``` columns.)
 - ```Pos_L```: is the total number of confirmed local cases. (Sum of the ```EDO_L``` columns.)
 - ```Pos```: is the total number of confirmed cases in the country, independent of their origin. (Sum of the ```EDO_I``` and ```EDO_L``` columns.) (It differs from the official number of cases in the country by a unit from March 11 to March 13 because the official tally doesn't include the recovered case in Sinaloa on this period. It is again included after March 14, along all other recovered cases.)
@@ -96,7 +106,7 @@ in ISO format.
 - ```Susp_rep```: is the total number of officially suspected cases in the country. ( *Sospechosos* in the CTD.)
 - ```Neg_rep```: is the total number of officially discarded (negative lab test) cases in the country. ( *Negativos* in the CTD.)
 - ```IRAG_Test```: is the total number of samples from random patients(°°°) whose sample was tested for SARS-CoV-2. (Reported in the CTD from February 25 onwards, announced on February 23.)
-- ```Tested_total```: is the total number of tests done in the country, according to official data. (Sum of the ```Pos```, ```Susp_rep```, ```Neg_rep``` and ```IRAG_Test``` columns.)
+- ```Tested_total```: is the total number of tests done in the country, according to official data. (Sum of the ```Pos```, ```Neg_rep``` and ```IRAG_Test``` columns.)
 - ```Recovered```: is the total number of confirmed recovered cases in the country. (Sum of the ```EDO_R``` columns.)
 No exact number of recovered patients has been reported from March 23 onwards.
 - ```Deceased```: is the total number of confirmed deceased cases in the country. (Sum of the ```EDO_D``` columns.)
@@ -106,6 +116,7 @@ No exact number of recovered patients has been reported from March 23 onwards.
 (°°) A recovered case consists in a patient that no longer displays symptoms and whose second sample has tested negative for SARS-CoV-2.
 
 (°°°) Non-suspicious patients for COVID-19 (i.e. that visited a country with active community transmission and present symptoms or that are contacts of patients with COVID-19) with acute respiratory illness with unknown etiology randomly screened for SARS-CoV-2.
+(Note: This definition was changed since at least March 23; the number of these tests has been the same since March 11.)
 
 ### Notes:
 

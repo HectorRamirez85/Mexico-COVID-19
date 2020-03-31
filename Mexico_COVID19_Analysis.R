@@ -17,6 +17,7 @@ head(table)
 subtable <- table[-c(1:35),] # removing the first 35 days without cases
 dim(subtable)
 head(subtable)
+tail(subtable)
 
 
 #### Data preparation #####

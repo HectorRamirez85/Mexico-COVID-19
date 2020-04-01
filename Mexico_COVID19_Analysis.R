@@ -19,6 +19,7 @@ subtable <- table[-c(1:35),] # removing the first 35 days without cases
 dim(subtable)
 head(subtable)
 tail(subtable)
+print(paste("COVID-19 cases updated:", subtable$Fecha[nrow(subtable)]))
 
 
 #### Data preparation #####

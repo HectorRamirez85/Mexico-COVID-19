@@ -47,8 +47,8 @@ ggplot(subtable) +
   geom_line(mapping=aes(x=Fecha, y=Pos, group=1, color="Total"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Pos, group=1, color="Total"), cex=cxSize) +
   geom_hline(yintercept = 100, lty=2, size=ref) +
-  geom_line(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recovered"), size=lineWd) +
-  geom_point(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recovered"), cex=cxSize) +
+  # geom_line(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recovered"), size=lineWd) +
+  # geom_point(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recovered"), cex=cxSize) +
   geom_line(mapping=aes(x=Fecha, y=Deceased, group=1, color="Deaths"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Deceased, group=1, color="Deaths"), cex=cxSize) +
   geom_line(mapping=aes(x=Fecha, y=Pos_I, group=1, color="Imported"), size=lineWd) +
@@ -64,7 +64,7 @@ ggplot(subtable) +
         legend.text = element_text(size=20), 
         legend.title = element_blank()) +
         # legend.title = element_text(size=24,face="bold")) +
-  scale_color_manual(values = cases, limits = names(cases)) +
+  scale_color_manual(values = cases[-5], limits = names(cases)[-5]) +
   labs(x = "Date",
        y = "Confirmed cases")
 dev.off()
@@ -85,8 +85,8 @@ ggplot(subtable) +
   geom_line(mapping=aes(x=Fecha, y=Pos, group=1, color="Totales"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Pos, group=1, color="Totales"), cex=cxSize) +
   geom_hline(yintercept = 100, lty=2, size=ref) +
-  geom_line(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recuperados"), size=lineWd) +
-  geom_point(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recuperados"), cex=cxSize) +
+  # geom_line(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recuperados"), size=lineWd) +
+  # geom_point(mapping=aes(x=Fecha, y=Recovered, group=1, color="Recuperados"), cex=cxSize) +
   geom_line(mapping=aes(x=Fecha, y=Deceased, group=1, color="Defunciones"), size=lineWd) +
   geom_point(mapping=aes(x=Fecha, y=Deceased, group=1, color="Defunciones"), cex=cxSize) +
   geom_line(mapping=aes(x=Fecha, y=Pos_I, group=1, color="Importados"), size=lineWd) +
@@ -101,7 +101,7 @@ ggplot(subtable) +
         plot.title = element_text(size=30, hjust = 0.5, face="bold"),
         legend.text = element_text(size=20), 
         legend.title = element_blank()) +
-  scale_color_manual(values = casos, limits = names(casos)) +
+  scale_color_manual(values = casos[-5], limits = names(casos)[-5]) +
   labs(x = "Fecha",
        y = "Casos confirmados")
 dev.off()

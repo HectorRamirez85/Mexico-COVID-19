@@ -7,6 +7,7 @@ graphs <- paste0(wd,"\\Graphs")
 setwd(wd)
 
 
+
 #### Read table ####
 table <- read.csv("Mexico_COVID19.csv")
 

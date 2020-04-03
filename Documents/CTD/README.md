@@ -2,7 +2,7 @@
 
 [Listado](https://www.gob.mx/salud/documentos/informacion-internacional-y-nacional-sobre-nuevo-coronavirus-2019-ncov)
 
-Última actualización: 2020-04-01 T 19:30:00-06:00
+Última actualización: 2020-04-02 T 19:30:00-06:00
 
 | Fecha               | Link        |
 | ------------------- | ----------  |
@@ -76,3 +76,4 @@
 | 2020-03-30           | [Link](https://www.gob.mx/salud/prensa/nuevo-coronavirus-en-el-mundo-covid-19-comunicado-tecnico-diario-239244?idiom=es) |
 | 2020-03-31           | [Link](https://www.gob.mx/salud/prensa/nuevo-coronavirus-en-el-mundo-covid-19-comunicado-tecnico-diario-239396?idiom=es) |
 | 2020-04-01           | [Link](https://www.gob.mx/salud/prensa/nuevo-coronavirus-en-el-mundo-covid-19-comunicado-tecnico-diario-239526?idiom=es) |
+| 2020-04-02           | [Link](https://www.gob.mx/salud/prensa/nuevo-coronavirus-en-el-mundo-covid-19-comunicado-tecnico-diario-239588?idiom=es) |

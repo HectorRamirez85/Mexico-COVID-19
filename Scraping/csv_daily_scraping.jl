@@ -41,9 +41,9 @@ end
 function fila_actualización(fecha, positivos_reportados, sospechosos_reportados, negativos_reportados, número_IRAG)
 
     #Carga los datos del día:
-    sospechosos_diarios = CSV.read("Daily data/$(fecha[1:4])/sospechosos_$(fecha).csv", header = 1, copycols = true)
-    confirmados_diarios = CSV.read("Daily data/$(fecha[1:4])/positivos_$(fecha).csv", header = 1, copycols = true)
-    fallecidos_diarios = CSV.read("Daily data/$(fecha[1:4])/fallecidos_$(fecha).csv", header = 1)
+    sospechosos_diarios = CSV.read("Daily data/$(fecha[1:6])/sospechosos_$(fecha).csv", header = 1, copycols = true)
+    confirmados_diarios = CSV.read("Daily data/$(fecha[1:6])/positivos_$(fecha).csv", header = 1, copycols = true)
+    fallecidos_diarios = CSV.read("Daily data/$(fecha[1:6])/fallecidos_$(fecha).csv", header = 1)
 
     #Calcula los casos de cada estado
     casos_estados = map(estado -> tipo_casos(sospechosos_diarios, confirmados_diarios, fallecidos_diarios, estado), nombres_estados)

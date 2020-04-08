@@ -7,7 +7,7 @@ using DataFrames
 nombres_estados = ["AGUASCALIENTES", "BAJA CALIFORNIA", "BAJA CALIFORNIA SUR", "CAMPECHE", "CHIAPAS", "CHIHUAHUA", "CIUDAD DE MÉXICO", "COAHUILA", "COLIMA", "DURANGO", "GUANAJUATO", "GUERRERO", "HIDALGO", "JALISCO", "MICHOACÁN", "MORELOS", "MÉXICO", "NAYARIT", "NUEVO LEÓN", "OAXACA", "PUEBLA", "QUERÉTARO", "QUINTANA ROO", "SAN LUIS POTOSÍ", "SINALOA", "SONORA", "TABASCO", "TAMAULIPAS", "TLAXCALA", "VERACRUZ", "YUCATÁN", "ZACATECAS"]
 
 #Define las palabras claves asociadas a casos locales (no importados):
-keywords_locales = ["Contacto"]
+keywords_locales = ["Contacto", "NA", "OTRO", "República", "MEX", "Otro"]
 
 #Cálculo de los números de tipos de casos (sospechosos, importados, locales, positivos y fallecidos) por estado:
 function tipo_casos(sospechosos_diarios, confirmados_diarios, fallecidos_diarios, estado)
@@ -38,7 +38,7 @@ end
 
 #Actualiza la tabla cumulativa del día a partir de la fecha y los datos del CTD.
 #La fecha se debe de poner como string e.g. "20200320"
-function fila_actualización(fecha, positivos_reportados, sospechosos_reportados, negativos_reportados, número_IRAG)
+function fila_actualización(fecha, positivos_reportados, sospechosos_reportados, negativos_reportados)
 
     #Carga los datos del día:
     sospechosos_diarios = CSV.read("Daily data/$(fecha[1:6])/sospechosos_$(fecha).csv", header = 1, copycols = true)
@@ -52,9 +52,9 @@ function fila_actualización(fecha, positivos_reportados, sospechosos_reportados
     acumulado_país = sum(casos_estados)
 
     #Calcula el número total de muestras analizadas.
-    total_tests = acumulado_país[4] + negativos_reportados + número_IRAG
-    #Genera un vector con el número de casos positivos importados, locales, total de casos; positivos reportados, sospechosos reportados, negativos reportados, número de tests IRAG, número total de pruebas, número de casos recuperados y número de casos fallecidos (para mantener el orden de la tabla original):
-    reporte_país = [acumulado_país[1:4]..., positivos_reportados, sospechosos_reportados, negativos_reportados, número_IRAG, total_tests, acumulado_país[5:6]...]
+    total_tests = acumulado_país[4] + negativos_reportados
+    #Genera un vector con el número de casos positivos importados, locales, total de casos; positivos reportados, sospechosos reportados, negativos reportados, número total de pruebas, número de casos recuperados y número de casos fallecidos (para mantener el orden de la tabla original):
+    reporte_país = [acumulado_país[1:4]..., positivos_reportados, sospechosos_reportados, negativos_reportados, missing, total_tests, acumulado_país[5:6]...]
 
     #Genera la fila de datos del día correspondiente:
     fila = string.(vcat(casos_estados..., reporte_país))

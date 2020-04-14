@@ -1,4 +1,4 @@
-Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso
+Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_llegada
 1,BAJA CALIFORNIA,M,56,2020-03-13,Sospechoso,Contacto,2020-03-05
 2,SAN LUIS POTOSÍ,F,22,2020-03-11,Sospechoso,España,2020-03-06
 3,CIUDAD DE MÉXICO,F,26,2020-03-13,Sospechoso,España,2020-03-13
@@ -14,9 +14,9 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 13,VERACRUZ,F,64,2020-03-15,Sospechoso,España,2020-03-13
 14,MÉXICO,M,40,2020-03-13,Sospechoso,Estados Unidos,2020-03-06
 15,VERACRUZ,M,24,2020-03-09,Sospechoso,Estados Unidos,2020-03-15
-16,CIUDAD DE MÉXICO,F,26,2020-03-07,Sospechoso,Contacto,NA
+16,CIUDAD DE MÉXICO,F,26,2020-03-07,Sospechoso,Contacto,
 17,BAJA CALIFORNIA,F,51,2020-03-10,Sospechoso,Estados Unidos,2020-03-06
-18,CIUDAD DE MÉXICO,F,31,2020-03-10,Sospechoso,Contacto,NA
+18,CIUDAD DE MÉXICO,F,31,2020-03-10,Sospechoso,Contacto,
 19,MÉXICO,F,39,2020-03-13,Sospechoso,Estados Unidos,2020-03-06
 20,CIUDAD DE MÉXICO,M,31,2020-03-14,Sospechoso,Singapur,2020-03-08
 21,CIUDAD DE MÉXICO,M,32,2020-03-08,Sospechoso,España,2020-03-03
@@ -28,30 +28,30 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 27,VERACRUZ,M,61,2020-03-16,Sospechoso,Contacto,2020-03-15
 28,AGUASCALIENTES,F,30,2020-03-14,Sospechoso,Estados Unidos,2020-03-03
 29,QUINTANA ROO,M,42,2020-03-14,Sospechoso,España,2020-03-13
-30,MÉXICO,M,9,2020-02-24,Sospechoso,Contacto,NA
-31,TAMAULIPAS,M,48,2020-03-15,Sospechoso,Contacto,NA
+30,MÉXICO,M,9,2020-02-24,Sospechoso,Contacto,
+31,TAMAULIPAS,M,48,2020-03-15,Sospechoso,Contacto,
 32,CIUDAD DE MÉXICO,M,38,2020-03-10,Sospechoso,Estados Unidos,2020-03-07
 33,SINALOA,M,33,2020-03-10,Sospechoso,Estados Unidos,2020-03-09
 34,HIDALGO,M,39,2020-03-07,Sospechoso,Francia,2020-03-06
-35,CIUDAD DE MÉXICO,M,43,2020-03-14,Sospechoso,Contacto,NA
-36,CIUDAD DE MÉXICO,F,35,2020-03-09,Sospechoso,Contacto,NA
+35,CIUDAD DE MÉXICO,M,43,2020-03-14,Sospechoso,Contacto,
+36,CIUDAD DE MÉXICO,F,35,2020-03-09,Sospechoso,Contacto,
 37,AGUASCALIENTES,F,33,2020-03-12,Sospechoso,Estados Unidos,2020-03-09
 38,SONORA,F,25,2020-03-11,Sospechoso,Francia,2020-02-29
-39,AGUASCALIENTES,F,47,2020-03-15,Sospechoso,Contacto,NA
+39,AGUASCALIENTES,F,47,2020-03-15,Sospechoso,Contacto,
 40,GUANAJUATO,M,32,2020-03-14,Sospechoso,Italia,2020-03-09
-41,PUEBLA,M,49,2020-03-15,Sospechoso,Contacto,NA
-42,MÉXICO,F,34,2020-03-09,Sospechoso,Contacto,NA
+41,PUEBLA,M,49,2020-03-15,Sospechoso,Contacto,
+42,MÉXICO,F,34,2020-03-09,Sospechoso,Contacto,
 43,GUERRERO,M,71,2020-03-09,Sospechoso,Estados Unidos,2020-03-05
-44,SAN LUIS POTOSÍ,M,25,2020-03-13,Sospechoso,Contacto,NA
-45,CIUDAD DE MÉXICO,M,79,2020-03-12,Sospechoso,Contacto,NA
-46,SONORA,M,24,2020-03-14,Sospechoso,Contacto,NA
+44,SAN LUIS POTOSÍ,M,25,2020-03-13,Sospechoso,Contacto,
+45,CIUDAD DE MÉXICO,M,79,2020-03-12,Sospechoso,Contacto,
+46,SONORA,M,24,2020-03-14,Sospechoso,Contacto,
 47,CIUDAD DE MÉXICO,M,37,2020-03-14,Sospechoso,España,2020-03-14
 48,AGUASCALIENTES,M,25,2020-03-15,Sospechoso,Contacto,2020-03-11
-49,QUINTANA ROO,F,25,2020-03-14,Sospechoso,Contacto,NA
+49,QUINTANA ROO,F,25,2020-03-14,Sospechoso,Contacto,
 50,MÉXICO,F,37,2020-03-04,Sospechoso,Estados Unidos,2020-03-07
-51,CIUDAD DE MÉXICO,F,76,2020-03-15,Sospechoso,Contacto,NA
+51,CIUDAD DE MÉXICO,F,76,2020-03-15,Sospechoso,Contacto,
 52,QUERÉTARO,M,25,2020-03-08,Sospechoso,España,2020-03-16
-53,GUERRERO,M,29,2020-03-15,Sospechoso,Contacto,NA
+53,GUERRERO,M,29,2020-03-15,Sospechoso,Contacto,
 54,HIDALGO,F,72,2020-03-14,Sospechoso,Estados Unidos,2020-03-14
 55,SONORA,M,44,2020-03-12,Sospechoso,Italia,2020-03-10
 56,MÉXICO,F,4,2020-03-04,Sospechoso,Estados Unidos,2020-03-07
@@ -60,9 +60,9 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 59,VERACRUZ,F,23,2020-03-12,Sospechoso,España,2020-02-29
 60,MÉXICO,F,3,2020-03-04,Sospechoso,Estados Unidos,2020-03-07
 61,SONORA,M,35,2020-03-09,Sospechoso,Estados Unidos,2020-03-15
-62,CIUDAD DE MÉXICO,M,33,2020-03-09,Sospechoso,Contacto,NA
+62,CIUDAD DE MÉXICO,M,33,2020-03-09,Sospechoso,Contacto,
 63,GUANAJUATO,F,27,2020-03-15,Sospechoso,Japón,2020-03-15
-64,CIUDAD DE MÉXICO,F,37,2020-03-14,Sospechoso,Contacto,NA
+64,CIUDAD DE MÉXICO,F,37,2020-03-14,Sospechoso,Contacto,
 65,SINALOA,F,61,2020-03-14,Sospechoso,Estados Unidos,2020-03-08
 66,SINALOA,M,23,2020-03-09,Sospechoso,Estados Unidos,2020-03-15
 67,NUEVO LEÓN,F,23,2020-03-09,Sospechoso,España,2020-03-16
@@ -70,17 +70,17 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 69,SINALOA,F,25,2020-03-12,Sospechoso,Estados Unidos,2020-03-04
 70,MÉXICO,M,56,2020-03-17,Sospechoso,España,2020-03-12
 71,NUEVO LEÓN,F,45,2020-02-29,Sospechoso,España,2020-03-10
-72,YUCATÁN,F,27,2020-03-13,Sospechoso,Contacto,NA
-73,NUEVO LEÓN,M,50,2020-03-09,Sospechoso,Contacto,NA
+72,YUCATÁN,F,27,2020-03-13,Sospechoso,Contacto,
+73,NUEVO LEÓN,M,50,2020-03-09,Sospechoso,Contacto,
 74,VERACRUZ,M,29,2020-03-15,Sospechoso,España,2020-03-14
 75,AGUASCALIENTES,F,66,2020-03-13,Sospechoso,España,2020-03-05
 76,YUCATÁN,M,25,2020-03-13,Sospechoso,España,2020-03-14
-77,YUCATÁN,M,51,2020-03-14,Sospechoso,Contacto,NA
+77,YUCATÁN,M,51,2020-03-14,Sospechoso,Contacto,
 78,BAJA CALIFORNIA,M,72,2020-03-09,Sospechoso,Estados Unidos,2020-03-10
-79,NUEVO LEÓN,M,44,2020-03-08,Sospechoso,Contacto,NA
+79,NUEVO LEÓN,M,44,2020-03-08,Sospechoso,Contacto,
 80,SONORA,F,49,2020-03-03,Sospechoso,Estados Unidos,2020-02-24
 81,NUEVO LEÓN,F,33,2020-03-03,Sospechoso,España,2020-03-03
-82,YUCATÁN,M,32,2020-03-11,Sospechoso,Estados Unidos,NA
+82,YUCATÁN,M,32,2020-03-11,Sospechoso,Estados Unidos,
 83,YUCATÁN,M,30,2020-03-16,Sospechoso,España,2020-03-11
 84,NUEVO LEÓN,F,78,2020-03-09,Sospechoso,Estados Unidos,2020-03-07
 85,NUEVO LEÓN,M,25,2020-03-09,Sospechoso,España,2020-03-10
@@ -89,54 +89,54 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 88,YUCATÁN,M,45,2020-03-13,Sospechoso,Estados Unidos,2020-03-13
 89,QUINTANA ROO,M,45,2020-03-15,Sospechoso,Contacto,2020-03-15
 90,YUCATÁN,M,44,2020-03-13,Sospechoso,Estados Unidos,2020-03-08
-91,JALISCO,M,54,2020-03-13,Sospechoso,Contacto,NA
+91,JALISCO,M,54,2020-03-13,Sospechoso,Contacto,
 92,VERACRUZ,F,34,2020-03-12,Sospechoso,Italia,2020-03-14
 93,CIUDAD DE MÉXICO,F,22,2020-03-11,Sospechoso,España,2020-03-08
 94,JALISCO,M,27,2020-03-13,Sospechoso,España,2020-03-15
 95,HIDALGO,F,23,2020-03-14,Sospechoso,Alemania,2020-03-15
 96,CIUDAD DE MÉXICO,M,67,2020-03-06,Sospechoso,España,2020-02-29
-97,SAN LUIS POTOSÍ,M,47,2020-03-15,Sospechoso,Contacto,NA
+97,SAN LUIS POTOSÍ,M,47,2020-03-15,Sospechoso,Contacto,
 98,HIDALGO,M,30,2020-03-15,Sospechoso,España,2020-03-15
-99,QUINTANA ROO,F,29,2020-03-14,Sospechoso,Contacto,NA
+99,QUINTANA ROO,F,29,2020-03-14,Sospechoso,Contacto,
 100,QUINTANA ROO,M,69,2020-03-14,Sospechoso,España,2020-03-04
 101,JALISCO,M,26,2020-03-15,Sospechoso,Estados Unidos,2020-03-08
 102,PUEBLA,M,46,2020-03-08,Sospechoso,España,2020-03-02
-103,PUEBLA,F,66,2020-03-12,Sospechoso,Contacto,NA
+103,PUEBLA,F,66,2020-03-12,Sospechoso,Contacto,
 104,VERACRUZ,F,63,2020-03-12,Sospechoso,Estados Unidos,2020-03-14
 105,SONORA,M,21,2020-02-09,Sospechoso,Estados Unidos,2020-02-29
 106,QUINTANA ROO,F,22,2020-03-16,Sospechoso,España,2020-03-16
 107,QUINTANA ROO,M,9,2020-03-05,Sospechoso,Estados Unidos,2020-03-03
 108,JALISCO,M,16,2020-03-17,Sospechoso,Estados Unidos,2020-03-07
-109,QUINTANA ROO,M,38,2020-03-13,Sospechoso,Contacto,NA
+109,QUINTANA ROO,M,38,2020-03-13,Sospechoso,Contacto,
 110,QUINTANA ROO,M,5,2020-03-05,Sospechoso,Estados Unidos,2020-03-03
-111,MÉXICO,M,32,2020-03-10,Sospechoso,Contacto,NA
+111,MÉXICO,M,32,2020-03-10,Sospechoso,Contacto,
 112,JALISCO,M,30,2020-03-12,Sospechoso,Alemania,2020-03-13
-113,MÉXICO,F,32,2020-03-15,Sospechoso,Contacto,NA
+113,MÉXICO,F,32,2020-03-15,Sospechoso,Contacto,
 114,JALISCO,F,42,2020-03-12,Sospechoso,Estados Unidos,2020-03-11
-115,MÉXICO,M,32,2020-03-10,Sospechoso,Contacto,NA
+115,MÉXICO,M,32,2020-03-10,Sospechoso,Contacto,
 116,JALISCO,F,33,2020-03-16,Sospechoso,Estados Unidos,2020-03-16
-117,MÉXICO,M,35,2020-03-10,Sospechoso,Contacto,NA
-118,MÉXICO,M,27,2020-03-15,Sospechoso,Contacto,NA
+117,MÉXICO,M,35,2020-03-10,Sospechoso,Contacto,
+118,MÉXICO,M,27,2020-03-15,Sospechoso,Contacto,
 119,JALISCO,F,49,2020-03-12,Sospechoso,España,2020-03-09
 120,JALISCO,F,28,2020-02-13,Sospechoso,Estados Unidos,2020-03-09
 121,JALISCO,F,49,2020-03-13,Sospechoso,Estados Unidos,2020-03-04
 122,NAYARIT,F,64,2020-03-14,Sospechoso,Estados Unidos,2020-03-12
-123,JALISCO,M,35,2020-03-10,Sospechoso,Contacto,NA
+123,JALISCO,M,35,2020-03-10,Sospechoso,Contacto,
 124,SINALOA,F,25,2020-03-15,Sospechoso,Estados Unidos,2020-03-17
-125,VERACRUZ,M,20,2020-03-15,Sospechoso,Contacto,NA
+125,VERACRUZ,M,20,2020-03-15,Sospechoso,Contacto,
 126,MICHOACÁN,M,23,2020-03-14,Sospechoso,Estados Unidos,2020-03-17
 127,JALISCO,M,19,2020-03-16,Sospechoso,España,2020-03-13
-128,VERACRUZ,M,19,2020-03-15,Sospechoso,Contacto,NA
+128,VERACRUZ,M,19,2020-03-15,Sospechoso,Contacto,
 129,MICHOACÁN,M,22,2020-03-15,Sospechoso,Estados Unidos,2020-03-17
 130,HIDALGO,M,43,2020-03-08,Sospechoso,Estados Unidos,2020-02-10
 131,GUERRERO,M,41,2020-03-16,Sospechoso,Estados Unidos,2020-03-02
 132,SAN LUIS POTOSÍ,M,39,2020-03-16,Sospechoso,España,2020-03-14
-133,VERACRUZ,F,57,2020-03-12,Sospechoso,Contacto,NA
+133,VERACRUZ,F,57,2020-03-12,Sospechoso,Contacto,
 134,GUERRERO,F,38,2020-03-13,Sospechoso,Estados Unidos,2020-03-01
 135,SAN LUIS POTOSÍ,F,38,2020-03-15,Sospechoso,España,2020-03-14
-136,DURANGO,M,30,2020-03-15,Sospechoso,Contacto,NA
+136,DURANGO,M,30,2020-03-15,Sospechoso,Contacto,
 137,BAJA CALIFORNIA,F,34,2020-03-14,Sospechoso,Estados Unidos,2020-03-08
-138,GUERRERO,F,3,2020-03-15,Sospechoso,Contacto,NA
+138,GUERRERO,F,3,2020-03-15,Sospechoso,Contacto,
 139,VERACRUZ,M,43,2020-03-15,Sospechoso,España,2020-03-16
 140,BAJA CALIFORNIA,F,23,2020-03-16,Sospechoso,Estados Unidos,2020-03-16
 141,SAN LUIS POTOSÍ,M,31,2020-03-15,Sospechoso,Francia,2020-03-14
@@ -149,44 +149,44 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 148,BAJA CALIFORNIA,M,35,2020-03-13,Sospechoso,Estados Unidos,2020-03-08
 149,SAN LUIS POTOSÍ,M,44,2020-03-16,Sospechoso,España,2020-03-16
 150,CIUDAD DE MÉXICO,M,28,2020-03-12,Sospechoso,España,2020-03-12
-151,MÉXICO,F,29,2020-03-15,Sospechoso,Contacto,NA
+151,MÉXICO,F,29,2020-03-15,Sospechoso,Contacto,
 152,SONORA,M,21,2020-03-10,Sospechoso,Estados Unidos,2020-03-07
-153,SAN LUIS POTOSÍ,M,42,2020-03-15,Sospechoso,Contacto,NA
+153,SAN LUIS POTOSÍ,M,42,2020-03-15,Sospechoso,Contacto,
 154,BAJA CALIFORNIA,F,29,2020-03-13,Sospechoso,Estados Unidos,2020-03-13
-155,SAN LUIS POTOSÍ,M,28,2020-03-16,Sospechoso,Contacto,NA
+155,SAN LUIS POTOSÍ,M,28,2020-03-16,Sospechoso,Contacto,
 156,SAN LUIS POTOSÍ,M,68,2020-03-15,Sospechoso,España,2020-03-17
 157,AGUASCALIENTES,M,70,2020-03-15,Sospechoso,Estados Unidos,2020-03-13
 158,CIUDAD DE MÉXICO,M,61,2020-03-05,Sospechoso,Estados Unidos,2020-02-29
-159,CIUDAD DE MÉXICO,M,43,2020-03-13,Sospechoso,Contacto,NA
+159,CIUDAD DE MÉXICO,M,43,2020-03-13,Sospechoso,Contacto,
 160,CIUDAD DE MÉXICO,F,29,2020-03-12,Sospechoso,España,2020-03-12
 161,PUEBLA,F,25,2020-03-04,Sospechoso,España,2020-03-01
-162,GUERRERO,F,3,2020-03-12,Sospechoso,Contacto,NA
-163,SAN LUIS POTOSÍ,F,33,2020-03-09,Sospechoso,Contacto,NA
+162,GUERRERO,F,3,2020-03-12,Sospechoso,Contacto,
+163,SAN LUIS POTOSÍ,F,33,2020-03-09,Sospechoso,Contacto,
 164,DURANGO,M,36,2020-03-13,Sospechoso,España,2020-03-14
 165,CIUDAD DE MÉXICO,F,42,2020-03-12,Sospechoso,Estados Unidos,2020-02-13
 166,SAN LUIS POTOSÍ,F,63,2020-03-15,Sospechoso,España,2020-03-17
-167,CIUDAD DE MÉXICO,M,59,2020-03-13,Sospechoso,Contacto,NA
+167,CIUDAD DE MÉXICO,M,59,2020-03-13,Sospechoso,Contacto,
 168,CIUDAD DE MÉXICO,M,24,2020-03-10,Sospechoso,Estados Unidos,2020-03-01
-169,SAN LUIS POTOSÍ,F,25,2020-03-16,Sospechoso,Contacto,NA
+169,SAN LUIS POTOSÍ,F,25,2020-03-16,Sospechoso,Contacto,
 170,COAHUILA,M,24,2020-03-16,Sospechoso,Italia,2020-03-15
 171,AGUASCALIENTES,M,50,2020-03-16,Sospechoso,España,2020-03-17
 172,GUANAJUATO,F,66,2020-03-13,Sospechoso,Estados Unidos,2020-03-01
 173,BAJA CALIFORNIA,F,47,2020-03-13,Sospechoso,Estados Unidos,2020-03-09
-174,SONORA,F,65,2020-03-17,Sospechoso,Contacto,NA
+174,SONORA,F,65,2020-03-17,Sospechoso,Contacto,
 175,BAJA CALIFORNIA,F,27,2020-03-13,Sospechoso,Estados Unidos,2020-03-03
 176,COAHUILA,F,24,2020-03-16,Sospechoso,España,2020-03-13
 177,CIUDAD DE MÉXICO,M,34,2020-03-04,Sospechoso,Italia,2020-02-29
 178,CIUDAD DE MÉXICO,F,49,2020-03-07,Sospechoso,Contacto,2020-03-04
-179,QUERÉTARO,F,45,2020-03-11,Sospechoso,Contacto,NA
+179,QUERÉTARO,F,45,2020-03-11,Sospechoso,Contacto,
 180,CIUDAD DE MÉXICO,M,40,2020-03-15,Sospechoso,Estados Unidos,2020-03-16
 181,GUANAJUATO,F,30,2020-03-05,Sospechoso,Estados Unidos,2020-03-16
 182,QUERÉTARO,F,26,2020-03-14,Sospechoso,Francia,2020-03-16
 183,BAJA CALIFORNIA,M,35,2020-03-16,Sospechoso,Contacto,2020-03-17
 184,SAN LUIS POTOSÍ,M,59,2020-03-15,Sospechoso,Estados Unidos,2020-03-06
-185,PUEBLA,M,24,2020-03-14,Sospechoso,Contacto,NA
-186,PUEBLA,F,52,2020-03-14,Sospechoso,Contacto,NA
-187,PUEBLA,F,27,2020-03-13,Sospechoso,Contacto,NA
-188,CIUDAD DE MÉXICO,F,21,2020-03-11,Sospechoso,Contacto,NA
+185,PUEBLA,M,24,2020-03-14,Sospechoso,Contacto,
+186,PUEBLA,F,52,2020-03-14,Sospechoso,Contacto,
+187,PUEBLA,F,27,2020-03-13,Sospechoso,Contacto,
+188,CIUDAD DE MÉXICO,F,21,2020-03-11,Sospechoso,Contacto,
 189,CIUDAD DE MÉXICO,F,67,2020-03-15,Sospechoso,Estados Unidos,2020-03-16
 190,TAMAULIPAS,F,4,2020-03-16,Sospechoso,Estados Unidos,2020-03-02
 191,GUANAJUATO,M,29,2020-03-15,Sospechoso,Estados Unidos,2020-03-16
@@ -194,11 +194,11 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 193,CIUDAD DE MÉXICO,M,71,2020-03-04,Sospechoso,España,2020-03-14
 194,COAHUILA,M,54,2020-03-12,Sospechoso,Estados Unidos,2020-03-11
 195,COLIMA,F,23,2020-03-17,Sospechoso,Estados Unidos,2020-03-10
-196,CIUDAD DE MÉXICO,F,31,2020-03-15,Sospechoso,Contacto,NA
+196,CIUDAD DE MÉXICO,F,31,2020-03-15,Sospechoso,Contacto,
 197,CIUDAD DE MÉXICO,F,25,2020-03-09,Sospechoso,España,2020-03-13
 198,VERACRUZ,M,5,2020-03-15,Sospechoso,China,2020-03-11
 199,CIUDAD DE MÉXICO,M,43,2020-03-08,Sospechoso,España,2020-03-04
-200,PUEBLA,F,24,2020-03-16,Sospechoso,Contacto,NA
+200,PUEBLA,F,24,2020-03-16,Sospechoso,Contacto,
 201,BAJA CALIFORNIA,M,31,2020-03-15,Sospechoso,Estados Unidos,2020-03-11
 202,JALISCO,F,24,2020-03-14,Sospechoso,Estados Unidos,2020-03-01
 203,PUEBLA,F,23,2020-03-13,Sospechoso,Francia,2020-03-16
@@ -206,18 +206,18 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 205,COAHUILA,M,9,2020-03-16,Sospechoso,Estados Unidos,2020-03-12
 206,AGUASCALIENTES,M,51,2020-03-18,Sospechoso,Contacto,2020-03-12
 207,VERACRUZ,F,38,2020-03-16,Sospechoso,España,2020-03-13
-208,CIUDAD DE MÉXICO,F,2,2020-02-29,Sospechoso,Contacto,NA
-209,CIUDAD DE MÉXICO,M,32,2020-02-16,Sospechoso,Contacto,NA
+208,CIUDAD DE MÉXICO,F,2,2020-02-29,Sospechoso,Contacto,
+209,CIUDAD DE MÉXICO,M,32,2020-02-16,Sospechoso,Contacto,
 210,MÉXICO,F,20,2020-02-26,Sospechoso,Italia,2020-02-24
 211,CIUDAD DE MÉXICO,M,45,2020-02-29,Sospechoso,Italia,2020-03-04
 212,MÉXICO,F,32,2020-02-26,Sospechoso,Alemania,2020-02-28
 213,CIUDAD DE MÉXICO,F,40,2020-03-06,Sospechoso,España,2020-03-08
 214,CIUDAD DE MÉXICO,F,50,2020-03-01,Sospechoso,Estados Unidos,2020-03-08
-215,MÉXICO,F,47,2020-03-06,Sospechoso,Contacto,NA
+215,MÉXICO,F,47,2020-03-06,Sospechoso,Contacto,
 216,CIUDAD DE MÉXICO,F,29,2020-02-27,Sospechoso,España,2020-02-14
 217,CIUDAD DE MÉXICO,F,25,2020-03-04,Sospechoso,Italia,2020-03-01
 218,CIUDAD DE MÉXICO,M,26,2020-02-29,Sospechoso,Japón,2020-02-17
-219,CIUDAD DE MÉXICO,F,22,2020-03-01,Sospechoso,Contacto,NA
+219,CIUDAD DE MÉXICO,F,22,2020-03-01,Sospechoso,Contacto,
 220,CIUDAD DE MÉXICO,F,21,2020-03-04,Sospechoso,Alemania,2020-03-03
 221,CIUDAD DE MÉXICO,F,23,2020-03-06,Sospechoso,Italia,2020-03-06
 222,CIUDAD DE MÉXICO,M,27,2020-03-04,Sospechoso,Italia,2020-02-29
@@ -226,7 +226,7 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 225,MÉXICO,F,33,2020-03-10,Sospechoso,Italia,2020-02-29
 226,MÉXICO,M,44,2020-03-01,Sospechoso,España,2020-03-03
 227,MÉXICO,M,34,2020-03-05,Sospechoso,Estados Unidos,2020-03-01
-228,MÉXICO,M,43,2020-03-10,Sospechoso,Contacto,NA
+228,MÉXICO,M,43,2020-03-10,Sospechoso,Contacto,
 229,QUERÉTARO,M,36,2020-03-07,Sospechoso,Estados Unidos,2020-03-08
 230,NUEVO LEÓN,F,27,2020-03-09,Sospechoso,Italia,2020-03-07
 231,MÉXICO,M,29,2020-03-07,Sospechoso,España,2020-02-29
@@ -238,15 +238,15 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 237,CIUDAD DE MÉXICO,F,37,2020-03-03,Sospechoso,Estados Unidos,2020-03-01
 238,BAJA CALIFORNIA,M,30,2020-02-13,Sospechoso,Estados Unidos,2020-03-05
 239,OAXACA,M,27,2020-03-06,Sospechoso,Estados Unidos,2020-03-11
-240,PUEBLA,M,26,2020-03-12,Sospechoso,Contacto,NA
+240,PUEBLA,M,26,2020-03-12,Sospechoso,Contacto,
 241,COAHUILA,M,61,2020-03-11,Sospechoso,Estados Unidos,2020-03-07
 242,CIUDAD DE MÉXICO,M,32,2020-03-11,Sospechoso,Estados Unidos,2020-02-03
 243,CIUDAD DE MÉXICO,M,22,2020-03-10,Sospechoso,Estados Unidos,2020-03-06
 244,CIUDAD DE MÉXICO,M,28,2020-03-10,Sospechoso,Estados Unidos,2020-03-04
-245,CIUDAD DE MÉXICO,M,35,2020-02-10,Sospechoso,Contacto,NA
+245,CIUDAD DE MÉXICO,M,35,2020-02-10,Sospechoso,Contacto,
 246,AGUASCALIENTES,F,56,2020-03-05,Sospechoso,Estados Unidos,2020-03-06
-247,QUINTANA ROO,F,80,2020-03-13,Sospechoso,Contacto,NA
-248,VERACRUZ,F,24,2020-03-13,Sospechoso,Contacto,NA
+247,QUINTANA ROO,F,80,2020-03-13,Sospechoso,Contacto,
+248,VERACRUZ,F,24,2020-03-13,Sospechoso,Contacto,
 249,COLIMA,F,34,2020-03-12,Sospechoso,Estados Unidos,2020-03-11
 250,BAJA CALIFORNIA,M,24,2020-03-10,Sospechoso,Estados Unidos,2020-03-10
 251,VERACRUZ,M,65,2020-03-14,Sospechoso,Alemania,2020-03-02
@@ -257,8 +257,8 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 256,MÉXICO,M,33,2020-03-05,Sospechoso,Estados Unidos,2020-03-01
 257,AGUASCALIENTES,M,56,2020-03-09,Sospechoso,Estados Unidos,2020-03-14
 258,CIUDAD DE MÉXICO,F,25,2020-03-12,Sospechoso,Alemania,2020-03-09
-259,CIUDAD DE MÉXICO,M,32,2020-03-13,Sospechoso,Contacto,NA
-260,CIUDAD DE MÉXICO,F,24,2020-03-14,Sospechoso,Contacto,NA
+259,CIUDAD DE MÉXICO,M,32,2020-03-13,Sospechoso,Contacto,
+260,CIUDAD DE MÉXICO,F,24,2020-03-14,Sospechoso,Contacto,
 261,JALISCO,F,20,2020-03-02,Sospechoso,Francia,2020-03-08
 262,CHIHUAHUA,M,15,2020-03-15,Sospechoso,Contacto,2020-03-15
 263,MÉXICO,M,61,2020-03-08,Sospechoso,España,2020-03-08
@@ -268,24 +268,24 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 267,CIUDAD DE MÉXICO,M,13,2020-03-13,Sospechoso,España,2020-03-13
 268,MÉXICO,M,55,2020-03-09,Sospechoso,Estados Unidos,2020-03-09
 269,VERACRUZ,M,21,2020-03-14,Sospechoso,España,2020-03-14
-270,CIUDAD DE MÉXICO,F,56,2020-03-08,Sospechoso,Contacto,NA
+270,CIUDAD DE MÉXICO,F,56,2020-03-08,Sospechoso,Contacto,
 271,GUERRERO,F,28,2020-03-12,Sospechoso,Estados Unidos,2020-03-08
-272,CIUDAD DE MÉXICO,M,37,2020-03-10,Sospechoso,Contacto,NA
-273,VERACRUZ,F,56,2020-03-16,Sospechoso,Contacto,NA
+272,CIUDAD DE MÉXICO,M,37,2020-03-10,Sospechoso,Contacto,
+273,VERACRUZ,F,56,2020-03-16,Sospechoso,Contacto,
 274,MÉXICO,M,31,2020-03-13,Sospechoso,España,2020-03-13
 275,MÉXICO,M,54,2020-03-13,Sospechoso,España,2020-03-13
 276,CIUDAD DE MÉXICO,M,12,2020-03-13,Sospechoso,España,2020-03-13
-277,CIUDAD DE MÉXICO,F,56,2020-03-08,Sospechoso,Contacto,NA
+277,CIUDAD DE MÉXICO,F,56,2020-03-08,Sospechoso,Contacto,
 278,CIUDAD DE MÉXICO,M,13,2020-03-13,Sospechoso,España,2020-03-13
-279,CIUDAD DE MÉXICO,M,26,2020-03-13,Sospechoso,Contacto,NA
+279,CIUDAD DE MÉXICO,M,26,2020-03-13,Sospechoso,Contacto,
 280,CIUDAD DE MÉXICO,M,31,2020-03-10,Sospechoso,Estados Unidos,2020-03-09
 281,QUINTANA ROO,F,37,2020-03-14,Sospechoso,Contacto,2020-03-13
 282,CIUDAD DE MÉXICO,M,32,2020-03-09,Sospechoso,Alemania,2020-03-13
 283,CIUDAD DE MÉXICO,M,39,2020-03-13,Sospechoso,Italia,2020-03-07
 284,CIUDAD DE MÉXICO,M,39,2020-03-13,Sospechoso,Italia,2020-03-07
 285,GUERRERO,F,62,2020-03-14,Sospechoso,Francia,2020-03-02
-286,QUERÉTARO,M,39,2020-03-13,Sospechoso,Contacto,NA
-287,COAHUILA,M,54,2020-03-09,Sospechoso,Contacto,NA
+286,QUERÉTARO,M,39,2020-03-13,Sospechoso,Contacto,
+287,COAHUILA,M,54,2020-03-09,Sospechoso,Contacto,
 288,BAJA CALIFORNIA,F,24,2020-03-11,Sospechoso,Estados Unidos,2020-03-04
 289,BAJA CALIFORNIA,M,54,2020-03-13,Sospechoso,Estados Unidos,2020-03-12
 290,COAHUILA,M,30,2020-03-15,Sospechoso,España,2020-03-03
@@ -301,7 +301,7 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 300,NAYARIT,F,64,2020-03-11,Sospechoso,Estados Unidos,2020-03-11
 301,CIUDAD DE MÉXICO,F,33,2020-03-14,Sospechoso,Contacto,2020-03-14
 302,BAJA CALIFORNIA,F,55,2020-03-05,Sospechoso,España,2020-03-05
-303,CIUDAD DE MÉXICO,M,37,2020-03-14,Sospechoso,Contacto,NA
+303,CIUDAD DE MÉXICO,M,37,2020-03-14,Sospechoso,Contacto,
 304,VERACRUZ,M,27,2020-03-07,Sospechoso,España,2020-03-13
 305,MÉXICO,F,30,2020-02-07,Sospechoso,Singapur,2020-03-06
 306,GUERRERO,M,32,2020-03-16,Sospechoso,Estados Unidos,2020-03-01

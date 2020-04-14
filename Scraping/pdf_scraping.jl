@@ -1,7 +1,10 @@
 #A partir de PDFs con tablas de la SSA, devuelve un CSV.
 
-#Paquetería para leer pdfs.
+#Paquetería para leer pdfs y manipular fechas
 using PDFIO
+using Dates
+using DelimitedFiles
+using ArgParse
 
 #Devuelve el texto del pdf como un string
 function texto_pdf(archivo)
@@ -16,9 +19,8 @@ function texto_pdf(archivo)
   #Escribimos el texto al buffer.
   #Entre cada página forzamos una línea nueva.
   for page in pages
-
     pdPageExtractText(datos, page)
-    write(datos, " \n ")
+    write(datos, " \n")
   end
 
   #Cerramos el documento.
@@ -41,46 +43,173 @@ function eliminar_nocasos(string)
   return rows
 end
 
-#Elimina espacios adicionales y separa las columnas por comas.
-function limpiar_fila(string)
+function procesa_fecha(string)
 
-  #Elimina el espacio inicial.
-  a = replace(string, r"^ +" => "")
-  #Elimina el espacio final y lo sustituye por un retorno de línea.
-  b = replace(a, r" +$" => "\n")
-  #Elimina espacios intermedios si son más de dos(para evitar problemas con los campos en si) y los reemplaza por una coma.
-  c = replace(b, r" {2,}" => ",")
-  #Corrige la ortografía de Querétaro:
-  d = replace(c, r"QUERETARO" => "QUERÉTARO")
-  #Cambia las fechas a formato ISO:
-  row = replace(d, r"(\d{1,2})/(\d{1,2})/(\d{4})" => s"\3-\2-\1")
+  longitud_campo = length(string)
 
-  return row
+  if longitud_campo == 10
+
+    try
+      return Dates.format(Date(string, "dd/mm/yyyy"), "yyyy-mm-dd")
+    catch e
+      return ""
+    end
+
+  elseif longitud_campo == 5
+
+    #Son fechas representadas en un formato de Excel: con el conteo de días iniciando en 1900-01-01. (Día 1)
+    #https://www.covid19in.mx/docs/datos/tablas-casos/normalizacion/fecha/
+    #Sin embargo, por retrocompatibilidad, se considera erróneamente que 1900 es un año bisiesto,
+    #por lo que para convertir las fechas a partir del 1900-02-28 se requiere restar dos al número mostrado,
+    #una unidad para tener un intervalo de tiempo respecto de 1900-01-01 y otra unidad para corregir por el día
+    #extra considerado.
+    #Gracias a Juan Claudio Toledo Roy por estas correciones.
+
+    Δt = parse(Int, string) - 2  #Nuestras fechas son posteriores a 1900-02-28.
+
+    fecha = Date("1900-01-01") + Day(Δt) |> Base.string
+
+    return fecha
+
+  else
+
+    return ""
+  end
 end
 
-#Función principal que toma un nombre de archivo y escribe el archivo .csv correspondiente:
-function scraping(archivo, sospechosos = false)
+function procesa_fila(string, index_fechas)
+  out = replace(string, r"^\s+" => "")  # espacios al inicio
+  out = replace(out, r"\s+$" => "")     # espacios al final
 
-  #Remueve la extensión para nombrar el .csv apropiadamente
-  nombre = replace(archivo, r".pdf" => "")
+  # Correciones para normalizar una tabla como la de Abril 6
+  correcciones = Dict("DISTRITO FEDERAL" => "CIUDAD DE MÉXICO",
+                      "MEXICO" => "MÉXICO",
+                      "MICHOACAN" => "MICHOACÁN",
+                      "NUEVO LEON" => "NUEVO LEÓN",
+                      "QUERETARO" => "QUERÉTARO",
+                      "SAN LUIS POTOSI" => "SAN LUIS POTOSÍ",
+                      "YUCATAN" => "YUCATÁN",
+                      "MASCULINO" => "M",
+                      "FEMENINO" => "F")
+
+  for (k, v) in correcciones
+    out = replace(out, k => v)
+  end
+
+  out = split(out, r"\s{2,}")           # mas de dos espacios define las entradas
+
+  for i in index_fechas
+    out[i] = procesa_fecha(out[i])  # fechas en formato ISO (de ser posible)
+  end
+
+  return out
+end
+
+#Función principal que toma el pdf y escribe csv correspondiente
+function scraping(archivo_pdf, archivo_csv;
+                  procedencia=false,
+                  fecha_llegada=false,
+                  index_fechas=[5])
 
   #Obtenemos los casos en un array:
-  casos = limpiar_fila.(eliminar_nocasos(texto_pdf(archivo)))
+  casos = procesa_fila.(eliminar_nocasos(texto_pdf(archivo_pdf)), Ref(index_fechas))
+  # Ref evita el broadcasting con el segundo argumento (la lista de las columnas
+  # que se tienen que considerar fechas)
+
+  header = ["Número_caso", "Estado", "Sexo", "Edad", "Fecha_síntomas",
+            "Situación"]
+  # TODO: evitar utilizar acentos para nombres de las columnas?
+
+  # Esto se puede cambiar para modificar el header
+  procedencia ? push!(header, "País_fuente") : nothing
+  fecha_llegada ? push!(header, "Fecha_llegada") : nothing
 
   #Escribe el archivo
-  open(nombre*".csv", "w") do io
-
-    if sospechosos
-      write(io, "Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso\n")
-    else
-      write(io, "Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso\n")
-    end
-
-    for caso in casos
-
-      write(io, caso)
-    end
+  open(archivo_csv, "w") do io
+    writedlm(io, [header], ',')
+    writedlm(io, casos, ',')  # esto escribe todas las filas con separadores y \n
   end
+
+  return "Done"
+end
+
+# Si el nombre del csv no se proporciona, se utiliza la misma base
+function scraping(archivo_pdf; kwargs...)
+  archivo_csv = splitext(basename(archivo_pdf))[1] * ".csv"
+  scraping(archivo_pdf, archivo_csv; kwargs...)
+end
+
+
+function parse_commandline()
+  settings = ArgParseSettings("convierte PDF con casos de covid-19 a archivo csv",
+                              suppress_warnings=true)
+
+  @add_arg_table! settings begin
+    "pdf"
+        help = "el archivo PDF con la tabla"
+        required = true
+    "--outfile", "-o"
+        help = "el archivo csv donde se va a escribir el resultado (default: el nombre del PDF)"
+        arg_type = String
+        default = ""
+    "--procedencia"
+        help = "utilizar la columna `Procedencia` (default: falso)"
+        action = :store_true
+        default = false
+    "--llegada"
+        help = "utilizar la columna `Fecha de llegada a México` (default: falso)"
+        action = :store_true
+        default = false
+  end
+
+  return parse_args(ARGS, settings)
+end
+
+function main()
+  parsed_args = parse_commandline()
+
+  archivo_pdf = parsed_args["pdf"]
+  @assert endswith(archivo_pdf, ".pdf")
+
+  archivo_csv = parsed_args["outfile"]
+  procedencia = parsed_args["procedencia"]
+  fecha_llegada = parsed_args["llegada"]
+
+  kwargs = Dict{Symbol,Any}()
+  kwargs[:procedencia] = procedencia
+  kwargs[:fecha_llegada] = fecha_llegada
+  # trata de adivinar que fecha_llegada es una columna de fecha
+  fecha_llegada ? kwargs[:index_fechas] = [5,8] : nothing
+
+  if length(archivo_csv) == 0
+    status = scraping(archivo_pdf; kwargs...)
+  else
+    @assert endswith(archivo_csv, ".csv")
+    status = scraping(archivo_pdf, archivo_csv; kwargs...)
+  end
+
+  println(status)
+end
+
+
+if abspath(PROGRAM_FILE) == @__FILE__
+  main()
+end
+
+#Función que hace el scraping de las dos tablas de datos diarias:
+#fecha en formato "yyyymmdd"
+function daily_scraping(fecha)
+
+  año_mes = fecha[1:6]
+
+  #Casos positivos:
+  scraping("Documents/Tablas casos/$(año_mes)/positivos_$(fecha).pdf")
+  #Casos sospechosos:
+  scraping("Documents/Tablas casos/$(año_mes)/sospechosos_$(fecha).pdf")
+
+  #Mueve los archivos a la carpeta respectiva:
+  mv("Documents/Tablas casos/$(año_mes)/positivos_$(fecha).csv", "Daily data/$(año_mes)/positivos_$(fecha).csv")
+  mv("Documents/Tablas casos/$(año_mes)/sospechosos_$(fecha).csv", "Daily data/$(año_mes)/sospechosos_$(fecha).csv")
 
   return "Done"
 end

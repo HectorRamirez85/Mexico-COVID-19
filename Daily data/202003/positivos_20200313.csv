@@ -1,4 +1,4 @@
-Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso
+Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_llegada
 1,CHIAPAS,F,18,2020-02-25,confirmado,Italia,2020-02-25
 2,CIUDAD DE MÉXICO,M,35,2020-02-22,confirmado,Italia,2020-02-22
 3,CIUDAD DE MÉXICO,M,59,2020-02-23,confirmado,Italia,2020-02-22
@@ -21,8 +21,8 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 20,PUEBLA,M,missing,2020-03-09,confirmado,España,missing
 21,QUERÉTARO,M,42,2020-03-05,confirmado,Italia,2020-03-05
 22,QUERÉTARO,M,43,2020-03-09,confirmado,España,2020-03-06
-23,QUERÉTARO,F,65,2020-03-10,confirmado,Contacto,NA
-24,QUERÉTARO,F,43,2020-03-11,confirmado,Contacto,NA
+23,QUERÉTARO,F,65,2020-03-10,confirmado,Contacto,
+24,QUERÉTARO,F,43,2020-03-11,confirmado,Contacto,
 25,QUINTANA ROO,F,71,2020-03-01,confirmado,Italia,2020-03-01
 26,YUCATÁN,F,57,2020-03-07,confirmado,España,2020-03-06
 27,SINALOA,M,41,2020-02-22,recuperado,Italia,2020-02-21

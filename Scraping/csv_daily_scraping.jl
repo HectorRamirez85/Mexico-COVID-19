@@ -6,9 +6,6 @@ using DataFrames
 
 nombres_estados = ["AGUASCALIENTES", "BAJA CALIFORNIA", "BAJA CALIFORNIA SUR", "CAMPECHE", "CHIAPAS", "CHIHUAHUA", "CIUDAD DE MÉXICO", "COAHUILA", "COLIMA", "DURANGO", "GUANAJUATO", "GUERRERO", "HIDALGO", "JALISCO", "MICHOACÁN", "MORELOS", "MÉXICO", "NAYARIT", "NUEVO LEÓN", "OAXACA", "PUEBLA", "QUERÉTARO", "QUINTANA ROO", "SAN LUIS POTOSÍ", "SINALOA", "SONORA", "TABASCO", "TAMAULIPAS", "TLAXCALA", "VERACRUZ", "YUCATÁN", "ZACATECAS"]
 
-#Define las palabras claves asociadas a casos locales (no importados):
-keywords_locales = ["Contacto", "NA", "OTRO", "República", "MEX", "Otro"]
-
 #Cálculo de los números de tipos de casos (sospechosos, importados, locales, positivos y fallecidos) por estado:
 function tipo_casos(sospechosos_diarios, confirmados_diarios, fallecidos_diarios, estado)
 
@@ -23,17 +20,12 @@ function tipo_casos(sospechosos_diarios, confirmados_diarios, fallecidos_diarios
     #El número total de casos confirmados en el estado:
     positivos = length(casos_entidad.Situación)
 
-    #El conjunto de casos importados al estado:
-    importados = filter(row -> row[:País_fuente] ∉ keywords_locales, casos_entidad).Número_caso |> length
-
-    #El número de casos locales:
-    locales = positivos - importados
-
     #El número total de fallecidos en el estado se extrae del otro documento:
     fallecidos = filter(row -> row[:Estado] == estado, fallecidos_diarios).Fallecidos[1]
 
     #El número de recuperados ya no se publica en los documentos oficiales. Se reporta como missing.
-    return [sospechosos, importados, locales, positivos, missing, fallecidos]
+    #Ya no se distinguen casos importados de locales. Se reportan por retrocompatibilidad como missing.
+    return [sospechosos, missing, missing, positivos, missing, fallecidos]
 end
 
 #Actualiza la tabla cumulativa del día a partir de la fecha y los datos del CTD.

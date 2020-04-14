@@ -1,4 +1,4 @@
-Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso
+Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_llegada
 1,CIUDAD DE MÉXICO,M,35,2020-02-22,confirmado,Italia,2020-02-22
 2,SINALOA,M,41,2020-02-22,confirmado,Italia,2020-02-21
 3,CIUDAD DE MÉXICO,M,59,2020-02-23,confirmado,Italia,2020-02-22
@@ -13,11 +13,11 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 12,NUEVO LEÓN,M,57,2020-03-04,confirmado,Alemania,2020-03-03
 13,MÉXICO,F,55,2020-03-09,confirmado,España,2020-03-09
 14,DURANGO,M,58,2020-03-06,confirmado,España,2020-02-28
-15,QUERÉTARO,F,65,2020-03-10,confirmado,Contacto,NA
+15,QUERÉTARO,F,65,2020-03-10,confirmado,Contacto,
 16,QUERÉTARO,M,42,2020-03-05,confirmado,Italia,2020-03-05
 17,CIUDAD DE MÉXICO,M,48,2020-03-10,confirmado,España,2020-03-09
 18,CIUDAD DE MÉXICO,M,38,2020-03-10,confirmado,España,2020-03-09
-19,QUERÉTARO,F,43,2020-03-11,confirmado,Contacto,NA
+19,QUERÉTARO,F,43,2020-03-11,confirmado,Contacto,
 20,PUEBLA,M,31,2020-03-05,confirmado,España,2020-03-09
 21,CIUDAD DE MÉXICO,M,37,2020-03-11,confirmado,Italia,2020-03-11
 22,YUCATÁN,F,57,2020-03-07,confirmado,España,2020-03-06
@@ -38,7 +38,7 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 37,CIUDAD DE MÉXICO,M,72,2020-03-09,confirmado,Unidos,2020-03-07
 38,CIUDAD DE MÉXICO,M,41,2020-03-10,confirmado,España,2020-03-08
 39,PUEBLA,M,30,2020-03-09,confirmado,España,2020-03-09
-40,CIUDAD DE MÉXICO,M,38,2020-03-11,confirmado,Contacto,NA
+40,CIUDAD DE MÉXICO,M,38,2020-03-11,confirmado,Contacto,
 41,OAXACA,F,30,2020-03-09,confirmado,España,2020-03-09
 42,SINALOA,M,25,2020-03-09,confirmado,Unidos,2020-03-13
 43,SAN LUIS POTOSÍ,F,23,2020-03-07,confirmado,España,2020-03-10
@@ -47,28 +47,28 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 46,QUERÉTARO,F,55,2020-03-10,confirmado,España,2020-03-10
 47,NUEVO LEÓN,M,27,2020-03-11,confirmado,España,2020-03-13
 48,NUEVO LEÓN,M,46,2020-03-06,confirmado,Unidos,2020-03-03
-49,GUERRERO,M,32,2020-03-12,confirmado,Contacto,NA
+49,GUERRERO,M,32,2020-03-12,confirmado,Contacto,
 50,DURANGO,M,32,2020-03-11,confirmado,Alemania,2020-03-11
 51,GUERRERO,F,22,2020-03-09,confirmado,España,2020-03-12
 52,PUEBLA,F,27,2020-03-05,confirmado,España,2020-03-09
 53,CIUDAD DE MÉXICO,F,70,2020-03-07,confirmado,Unidos,2020-03-08
-54,CIUDAD DE MÉXICO,M,32,2020-03-10,confirmado,Contacto,NA
+54,CIUDAD DE MÉXICO,M,32,2020-03-10,confirmado,Contacto,
 55,CIUDAD DE MÉXICO,M,59,2020-03-07,confirmado,España,2020-03-04
 56,CIUDAD DE MÉXICO,M,70,2020-03-09,confirmado,Unidos,2020-03-08
 57,DURANGO,F,38,2020-03-09,confirmado,España,2020-03-12
 58,AGUASCALIENTES,M,25,2020-03-14,confirmado,España,2020-03-12
-59,PUEBLA,F,31,2020-03-10,confirmado,Contacto,NA
+59,PUEBLA,F,31,2020-03-10,confirmado,Contacto,
 60,QUERÉTARO,F,45,2020-03-13,confirmado,España,2020-03-10
-61,MÉXICO,M,27,2020-03-13,confirmado,Contacto,NA
+61,MÉXICO,M,27,2020-03-13,confirmado,Contacto,
 62,MÉXICO,F,47,2020-03-05,confirmado,Unidos,2020-02-29
 63,MÉXICO,F,59,2020-03-07,confirmado,Francia,2020-03-08
-64,CIUDAD DE MÉXICO,M,41,2020-03-09,confirmado,Contacto,NA
+64,CIUDAD DE MÉXICO,M,41,2020-03-09,confirmado,Contacto,
 65,GUANAJUATO,M,39,2020-03-12,confirmado,Alemania,2020-03-10
 66,NUEVO LEÓN,M,72,2020-03-11,confirmado,Unidos,2020-03-10
 67,CHIHUAHUA,M,29,2020-03-12,confirmado,Alemania,2020-03-12
 68,QUINTANA ROO,F,50,2020-03-08,confirmado,España,2020-03-11
 69,QUINTANA ROO,F,19,2020-03-13,confirmado,España,2020-03-11
-70,QUINTANA ROO,M,44,2020-03-11,confirmado,Contacto,NA
+70,QUINTANA ROO,M,44,2020-03-11,confirmado,Contacto,
 71,MÉXICO,F,49,2020-03-13,confirmado,España,2020-03-13
 72,PUEBLA,M,32,2020-03-11,confirmado,Unidos,2020-03-07
 73,NUEVO LEÓN,F,74,2020-03-09,confirmado,España,2020-03-12
@@ -88,7 +88,7 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 87,SONORA,M,72,2020-03-11,confirmado,Unidos,2020-03-11
 88,JALISCO,M,49,2020-03-06,confirmado,España,2020-03-04
 89,JALISCO,M,41,2020-03-10,confirmado,Unidos,2020-02-29
-90,JALISCO,F,56,2020-03-11,confirmado,Contacto,NA
+90,JALISCO,F,56,2020-03-11,confirmado,Contacto,
 91,YUCATÁN,M,37,2020-03-09,confirmado,Unidos,2020-03-06
 92,NUEVO LEÓN,M,19,2020-03-07,confirmado,Contacto,2020-03-10
 93,NUEVO LEÓN,M,34,2020-03-12,confirmado,Unidos,2020-03-07
@@ -98,7 +98,7 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 97,NUEVO LEÓN,M,21,2020-03-15,confirmado,España,2020-03-13
 98,YUCATÁN,F,21,2020-03-13,confirmado,España,2020-03-13
 99,YUCATÁN,M,25,2020-03-11,confirmado,España,2020-03-15
-100,JALISCO,F,36,2020-03-10,confirmado,Contacto,NA
+100,JALISCO,F,36,2020-03-10,confirmado,Contacto,
 101,CIUDAD DE MÉXICO,M,53,2020-03-09,confirmado,España,2020-03-09
 102,CIUDAD DE MÉXICO,F,53,2020-03-06,confirmado,España,2020-03-09
 103,MÉXICO,M,56,2020-03-07,confirmado,Unidos,2020-03-05
@@ -122,8 +122,8 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 121,SAN LUIS POTOSÍ,M,31,2020-03-15,confirmado,Francia,2020-03-14
 122,SAN LUIS POTOSÍ,M,44,2020-03-16,confirmado,España,2020-03-16
 123,SAN LUIS POTOSÍ,F,63,2020-03-15,confirmado,España,2020-03-17
-124,CIUDAD DE MÉXICO,M,28,2020-03-16,confirmado,Contacto,NA
-125,PUEBLA,F,24,2020-03-16,confirmado,Contacto,NA
+124,CIUDAD DE MÉXICO,M,28,2020-03-16,confirmado,Contacto,
+125,PUEBLA,F,24,2020-03-16,confirmado,Contacto,
 126,CHIAPAS,M,63,2020-03-23,confirmado,Unidos,2020-03-11
 127,CIUDAD DE MÉXICO,M,35,2020-03-10,confirmado,Unidos,2020-03-10
 128,GUANAJUATO,F,18,2020-03-10,confirmado,Unidos,2020-03-13
@@ -136,14 +136,14 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 135,QUINTANA ROO,M,42,2020-03-14,confirmado,España,2020-03-13
 136,QUERÉTARO,M,25,2020-03-08,confirmado,España,2020-03-16
 137,MÉXICO,F,52,2020-03-10,confirmado,España,2020-03-12
-138,YUCATÁN,F,27,2020-03-13,confirmado,Contacto,NA
-139,YUCATÁN,M,51,2020-03-14,confirmado,Contacto,NA
+138,YUCATÁN,F,27,2020-03-13,confirmado,Contacto,
+139,YUCATÁN,M,51,2020-03-14,confirmado,Contacto,
 140,BAJA CALIFORNIA,M,72,2020-03-09,confirmado,Unidos,2020-03-10
-141,YUCATÁN,M,32,2020-03-11,confirmado,Unidos,NA
+141,YUCATÁN,M,32,2020-03-11,confirmado,Unidos,
 142,YUCATÁN,M,30,2020-03-16,confirmado,España,2020-03-11
 143,YUCATÁN,M,45,2020-03-13,confirmado,Unidos,2020-03-13
 144,QUINTANA ROO,M,45,2020-03-15,confirmado,Unidos,2020-03-15
-145,JALISCO,M,54,2020-03-13,confirmado,Contacto,NA
+145,JALISCO,M,54,2020-03-13,confirmado,Contacto,
 146,JALISCO,M,27,2020-03-13,confirmado,España,2020-03-15
 147,QUINTANA ROO,F,22,2020-03-16,confirmado,España,2020-03-16
 148,JALISCO,F,49,2020-03-12,confirmado,España,2020-03-09
@@ -152,18 +152,18 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 151,CIUDAD DE MÉXICO,M,46,2020-03-12,confirmado,Unidos,2020-03-10
 152,CIUDAD DE MÉXICO,M,35,2020-03-11,confirmado,Unidos,2020-03-05
 153,AGUASCALIENTES,M,70,2020-03-15,confirmado,Unidos,2020-03-13
-154,CIUDAD DE MÉXICO,M,59,2020-03-13,confirmado,Contacto,NA
+154,CIUDAD DE MÉXICO,M,59,2020-03-13,confirmado,Contacto,
 155,AGUASCALIENTES,M,50,2020-03-16,confirmado,España,2020-03-17
 156,VERACRUZ,F,64,2020-03-18,confirmado,España,2020-03-15
 157,NUEVO LEÓN,M,35,2020-03-09,confirmado,Unidos,2020-03-09
-158,NUEVO LEÓN,M,42,2020-03-16,confirmado,Contacto,NA
+158,NUEVO LEÓN,M,42,2020-03-16,confirmado,Contacto,
 159,DURANGO,M,74,2020-03-15,confirmado,Unidos,2020-03-03
 160,MORELOS,M,37,2020-03-14,confirmado,Unidos,2020-03-07
 161,QUERÉTARO,M,34,2020-03-15,confirmado,Francia,2020-03-15
 162,VERACRUZ,F,63,2020-03-14,confirmado,España,2020-03-13
 163,NUEVO LEÓN,F,29,2020-03-13,confirmado,España,2020-03-14
 164,MORELOS,F,54,2020-03-17,confirmado,Unidos,2020-03-17
-165,JALISCO,F,73,2020-03-14,confirmado,Contacto,NA
+165,JALISCO,F,73,2020-03-14,confirmado,Contacto,
 166,JALISCO,M,52,2020-03-14,confirmado,Unidos,2020-03-14
 167,JALISCO,M,50,2020-03-04,confirmado,Unidos,2020-03-07
 168,QUINTANA ROO,M,35,2020-03-15,confirmado,Alemania,2020-03-14
@@ -188,41 +188,41 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 187,QUERÉTARO,M,51,2020-03-16,confirmado,Unidos,2020-03-15
 188,MÉXICO,F,33,2020-03-15,confirmado,España,2020-03-05
 189,MÉXICO,M,31,2020-03-03,confirmado,España,2020-03-01
-190,BAJA CALIFORNIA,M,62,2020-03-17,confirmado,Contacto,NA
+190,BAJA CALIFORNIA,M,62,2020-03-17,confirmado,Contacto,
 191,QUERÉTARO,M,34,2020-03-18,confirmado,Francia,2020-03-16
-192,CIUDAD DE MÉXICO,F,38,2020-03-14,confirmado,Contacto,NA
-193,MÉXICO,M,55,2020-03-11,confirmado,Contacto,NA
-194,NUEVO LEÓN,M,53,2020-03-17,confirmado,Contacto,NA
+192,CIUDAD DE MÉXICO,F,38,2020-03-14,confirmado,Contacto,
+193,MÉXICO,M,55,2020-03-11,confirmado,Contacto,
+194,NUEVO LEÓN,M,53,2020-03-17,confirmado,Contacto,
 195,NUEVO LEÓN,M,58,2020-03-15,confirmado,España,2020-03-14
 196,NUEVO LEÓN,M,61,2020-03-15,confirmado,España,2020-03-14
-197,NUEVO LEÓN,F,59,2020-03-17,confirmado,Contacto,NA
+197,NUEVO LEÓN,F,59,2020-03-17,confirmado,Contacto,
 198,TABASCO,M,46,2020-03-09,confirmado,Unidos,2020-03-11
 199,JALISCO,F,75,2020-03-08,confirmado,Unidos,2020-03-14
 200,JALISCO,M,80,2020-03-14,confirmado,Unidos,2020-03-14
 201,NUEVO LEÓN,F,31,2020-03-10,confirmado,Contacto,2020-03-10
 202,CIUDAD DE MÉXICO,M,38,2020-03-10,confirmado,Unidos,2020-03-07
-203,CIUDAD DE MÉXICO,F,35,2020-03-09,confirmado,Contacto,NA
+203,CIUDAD DE MÉXICO,F,35,2020-03-09,confirmado,Contacto,
 204,CIUDAD DE MÉXICO,M,61,2020-03-16,confirmado,España,2020-03-11
-205,CIUDAD DE MÉXICO,F,37,2020-03-14,confirmado,Contacto,NA
-206,CIUDAD DE MÉXICO,M,43,2020-03-13,confirmado,Contacto,NA
+205,CIUDAD DE MÉXICO,F,37,2020-03-14,confirmado,Contacto,
+206,CIUDAD DE MÉXICO,M,43,2020-03-13,confirmado,Contacto,
 207,BAJA CALIFORNIA,M,26,2020-03-15,confirmado,Francia,2020-03-13
 208,HIDALGO,F,57,2020-03-14,confirmado,España,2020-03-16
 209,PUEBLA,M,21,2020-03-17,confirmado,España,2020-03-15
 210,BAJA CALIFORNIA,F,34,2020-03-11,confirmado,Unidos,2020-03-08
-211,CIUDAD DE MÉXICO,M,0,2020-03-16,confirmado,Contacto,NA
+211,CIUDAD DE MÉXICO,M,0,2020-03-16,confirmado,Contacto,
 212,PUEBLA,M,56,2020-03-14,confirmado,Unidos,2020-03-07
 213,NAYARIT,F,48,2020-03-17,confirmado,España,2020-03-17
 214,PUEBLA,M,24,2020-03-14,confirmado,Unidos,2020-03-07
 215,CHIHUAHUA,F,18,2020-03-15,confirmado,Unidos,2020-03-14
-216,BAJA CALIFORNIA,M,39,2020-03-17,confirmado,Contacto,NA
+216,BAJA CALIFORNIA,M,39,2020-03-17,confirmado,Contacto,
 217,QUERÉTARO,F,29,2020-03-10,confirmado,Unidos,2020-03-01
-218,JALISCO,M,77,2020-03-13,confirmado,Contacto,NA
+218,JALISCO,M,77,2020-03-13,confirmado,Contacto,
 219,TABASCO,M,33,2020-03-14,confirmado,España,2020-03-18
 220,AGUASCALIENTES,M,44,2020-03-17,confirmado,España,2020-03-17
-221,JALISCO,M,20,2020-03-17,confirmado,Contacto,NA
-222,ZACATECAS,M,38,2020-03-08,confirmado,Contacto,NA
+221,JALISCO,M,20,2020-03-17,confirmado,Contacto,
+222,ZACATECAS,M,38,2020-03-08,confirmado,Contacto,
 223,QUERÉTARO,M,29,2020-03-18,confirmado,España,2020-03-16
-224,CIUDAD DE MÉXICO,M,33,2020-03-11,confirmado,Contacto,NA
+224,CIUDAD DE MÉXICO,M,33,2020-03-11,confirmado,Contacto,
 225,NUEVO LEÓN,M,32,2020-03-15,confirmado,Unidos,2020-03-16
 226,NUEVO LEÓN,F,27,2020-03-18,confirmado,Unidos,2020-03-14
 227,NUEVO LEÓN,M,35,2020-03-17,confirmado,Unidos,2020-03-15
@@ -233,46 +233,46 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 232,CIUDAD DE MÉXICO,M,43,2020-03-08,confirmado,España,2020-03-04
 233,CIUDAD DE MÉXICO,F,31,2020-03-03,confirmado,Alemania,2020-03-09
 234,VERACRUZ,M,31,2020-03-16,confirmado,España,2020-03-13
-235,QUERÉTARO,M,29,2020-03-16,confirmado,Contacto,NA
-236,DURANGO,F,68,2020-03-18,confirmado,Contacto,NA
+235,QUERÉTARO,M,29,2020-03-16,confirmado,Contacto,
+236,DURANGO,F,68,2020-03-18,confirmado,Contacto,
 237,BAJA CALIFORNIA,F,26,2020-03-13,confirmado,Unidos,2020-03-16
 238,SAN LUIS POTOSÍ,F,20,2020-03-09,confirmado,España,2020-03-17
-239,CIUDAD DE MÉXICO,F,54,2020-03-15,confirmado,Contacto,NA
+239,CIUDAD DE MÉXICO,F,54,2020-03-15,confirmado,Contacto,
 240,JALISCO,M,58,2020-03-17,confirmado,Unidos,2020-03-04
 241,BAJA CALIFORNIA,M,35,2020-03-18,confirmado,Unidos,2020-03-16
 242,VERACRUZ,F,35,2020-03-14,confirmado,Unidos,2020-03-13
-243,JALISCO,M,53,2020-03-17,confirmado,Contacto,NA
+243,JALISCO,M,53,2020-03-17,confirmado,Contacto,
 244,VERACRUZ,M,27,2020-03-17,confirmado,Contacto,2020-03-16
 245,QUINTANA ROO,M,51,2020-03-11,confirmado,España,2020-03-16
 246,TAMAULIPAS,F,33,2020-03-16,confirmado,Francia,2020-03-07
 247,SAN LUIS POTOSÍ,M,46,2020-03-12,confirmado,Unidos,2020-03-12
-248,CIUDAD DE MÉXICO,M,42,2020-03-06,confirmado,Contacto,NA
+248,CIUDAD DE MÉXICO,M,42,2020-03-06,confirmado,Contacto,
 249,CIUDAD DE MÉXICO,F,35,2020-03-16,confirmado,Unidos,2020-03-09
 250,JALISCO,M,29,2020-03-17,confirmado,Singapur,2020-03-09
 251,TABASCO,F,37,2020-03-10,confirmado,Unidos,2020-03-11
 252,CIUDAD DE MÉXICO,M,47,2020-03-14,confirmado,España,2020-03-16
 253,CIUDAD DE MÉXICO,M,34,2020-03-14,confirmado,Francia,2020-03-12
 254,JALISCO,M,55,2020-03-09,confirmado,España,2020-03-12
-255,CIUDAD DE MÉXICO,F,40,2020-03-18,confirmado,Contacto,NA
-256,JALISCO,M,58,2020-03-17,confirmado,Contacto,NA
+255,CIUDAD DE MÉXICO,F,40,2020-03-18,confirmado,Contacto,
+256,JALISCO,M,58,2020-03-17,confirmado,Contacto,
 257,BAJA CALIFORNIA SUR,M,48,2020-03-16,confirmado,Unidos,2020-03-14
 258,COAHUILA,F,41,2020-03-18,confirmado,España,2020-03-14
 259,CHIHUAHUA,M,47,2020-03-18,confirmado,Unidos,2020-03-13
-260,CIUDAD DE MÉXICO,F,48,2020-03-13,confirmado,Contacto,NA
+260,CIUDAD DE MÉXICO,F,48,2020-03-13,confirmado,Contacto,
 261,CIUDAD DE MÉXICO,M,35,2020-03-08,confirmado,España,2020-03-08
 262,COAHUILA,M,29,2020-03-17,confirmado,Unidos,2020-03-15
-263,CIUDAD DE MÉXICO,M,52,2020-03-11,confirmado,Contacto,NA
-264,CIUDAD DE MÉXICO,M,25,2020-03-13,confirmado,Contacto,NA
+263,CIUDAD DE MÉXICO,M,52,2020-03-11,confirmado,Contacto,
+264,CIUDAD DE MÉXICO,M,25,2020-03-13,confirmado,Contacto,
 265,MICHOACÁN,M,36,2020-03-09,confirmado,España,2020-03-15
-266,SINALOA,M,55,2020-03-17,confirmado,Contacto,NA
+266,SINALOA,M,55,2020-03-17,confirmado,Contacto,
 267,BAJA CALIFORNIA,M,27,2020-03-13,confirmado,Francia,2020-03-13
 268,CHIHUAHUA,F,19,2020-03-13,confirmado,España,2020-03-14
 269,CIUDAD DE MÉXICO,M,37,2020-03-16,confirmado,España,2020-03-16
 270,CHIHUAHUA,F,21,2020-03-16,confirmado,España,2020-03-14
 271,CIUDAD DE MÉXICO,M,51,2020-03-17,confirmado,Contacto,2020-03-08
-272,YUCATÁN,F,40,2020-03-15,confirmado,Contacto,NA
-273,CIUDAD DE MÉXICO,M,36,2020-03-14,confirmado,Contacto,NA
-274,HIDALGO,F,55,2020-03-12,confirmado,Contacto,NA
+272,YUCATÁN,F,40,2020-03-15,confirmado,Contacto,
+273,CIUDAD DE MÉXICO,M,36,2020-03-14,confirmado,Contacto,
+274,HIDALGO,F,55,2020-03-12,confirmado,Contacto,
 275,SAN LUIS POTOSÍ,F,27,2020-03-17,confirmado,Unidos,2020-03-18
 276,JALISCO,F,38,2020-03-15,confirmado,Unidos,2020-03-16
 277,SAN LUIS POTOSÍ,M,21,2020-03-19,confirmado,Contacto,2020-03-18
@@ -286,8 +286,8 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 285,SONORA,M,30,2020-03-18,confirmado,Francia,2020-03-13
 286,MICHOACÁN,F,57,2020-03-15,confirmado,Contacto,2020-03-15
 287,MICHOACÁN,M,57,2020-03-18,confirmado,Contacto,2020-03-15
-288,YUCATÁN,M,31,2020-03-17,confirmado,Contacto,NA
-289,BAJA CALIFORNIA,F,49,2020-03-12,confirmado,Contacto,NA
+288,YUCATÁN,M,31,2020-03-17,confirmado,Contacto,
+289,BAJA CALIFORNIA,F,49,2020-03-12,confirmado,Contacto,
 290,ZACATECAS,M,39,2020-03-19,confirmado,Contacto,2020-03-19
 291,COLIMA,F,34,2020-03-12,confirmado,Unidos,2020-03-11
 292,MÉXICO,M,44,2020-02-19,confirmado,Italia,2020-02-22
@@ -306,86 +306,86 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 305,COAHUILA,M,42,2020-03-18,confirmado,Unidos,2020-03-11
 306,COAHUILA,M,11,2020-03-18,confirmado,Unidos,2020-03-11
 307,COAHUILA,M,53,2020-03-17,confirmado,Unidos,2020-03-11
-308,COAHUILA,M,42,2020-03-18,confirmado,Unidos,NA
-309,MÉXICO,M,46,2020-03-18,confirmado,Contacto,NA
+308,COAHUILA,M,42,2020-03-18,confirmado,Unidos,
+309,MÉXICO,M,46,2020-03-18,confirmado,Contacto,
 310,MÉXICO,M,62,2020-03-16,confirmado,España,2020-03-19
 311,JALISCO,M,24,2020-03-17,confirmado,Unidos,2020-03-15
 312,YUCATÁN,F,42,2020-03-18,confirmado,Francia,2020-03-18
 313,COAHUILA,F,30,2020-03-13,confirmado,Unidos,2020-03-18
 314,HIDALGO,F,40,2020-03-19,confirmado,Contacto,2020-03-13
 315,NUEVO LEÓN,M,60,2020-03-14,confirmado,España,2020-03-13
-316,OAXACA,M,22,2020-03-16,confirmado,Contacto,NA
+316,OAXACA,M,22,2020-03-16,confirmado,Contacto,
 317,NUEVO LEÓN,M,57,2020-03-13,confirmado,Unidos,2020-03-12
 318,NUEVO LEÓN,M,22,2020-03-14,confirmado,Unidos,2020-03-13
 319,COAHUILA,M,76,2020-03-20,confirmado,España,2020-03-14
 320,COAHUILA,M,42,2020-03-20,confirmado,España,2020-03-14
 321,COAHUILA,F,42,2020-03-20,confirmado,España,2020-03-14
-322,HIDALGO,F,19,2020-03-20,confirmado,Contacto,NA
+322,HIDALGO,F,19,2020-03-20,confirmado,Contacto,
 323,SONORA,M,22,2020-03-11,confirmado,España,2020-03-17
 324,BAJA CALIFORNIA SUR,F,33,2020-03-16,confirmado,Contacto,2020-03-07
-325,QUERÉTARO,M,37,2020-03-16,confirmado,Contacto,NA
-326,JALISCO,M,55,2020-03-13,confirmado,Contacto,NA
+325,QUERÉTARO,M,37,2020-03-16,confirmado,Contacto,
+326,JALISCO,M,55,2020-03-13,confirmado,Contacto,
 327,MÉXICO,M,24,2020-03-20,confirmado,Italia,2020-03-14
 328,MÉXICO,F,29,2020-03-20,confirmado,España,2020-03-15
 329,MÉXICO,F,29,2020-03-12,confirmado,Unidos,2020-02-27
 330,QUERÉTARO,F,30,2020-03-21,confirmado,España,2020-03-15
 331,CAMPECHE,F,59,2020-03-06,confirmado,España,2020-03-15
 332,QUINTANA ROO,M,65,2020-03-18,confirmado,España,2020-03-15
-333,PUEBLA,M,29,2020-03-13,confirmado,Contacto,NA
+333,PUEBLA,M,29,2020-03-13,confirmado,Contacto,
 334,PUEBLA,M,33,2020-03-13,confirmado,Unidos,2020-03-12
 335,JALISCO,M,28,2020-03-16,confirmado,Unidos,2020-03-06
 336,PUEBLA,F,49,2020-03-14,confirmado,España,2020-03-04
 337,BAJA CALIFORNIA,M,30,2020-03-19,confirmado,Unidos,2020-03-09
 338,ZACATECAS,M,28,2020-03-18,confirmado,España,2020-03-15
-339,CIUDAD DE MÉXICO,M,60,2020-03-18,confirmado,Contacto,NA
-340,CIUDAD DE MÉXICO,M,38,2020-03-13,confirmado,Contacto,NA
+339,CIUDAD DE MÉXICO,M,60,2020-03-18,confirmado,Contacto,
+340,CIUDAD DE MÉXICO,M,38,2020-03-13,confirmado,Contacto,
 341,CIUDAD DE MÉXICO,M,37,2020-03-15,confirmado,Contacto,2020-03-16
 342,PUEBLA,F,28,2020-03-15,confirmado,Unidos,2020-03-17
 343,TABASCO,M,30,2020-03-13,confirmado,Unidos,2020-03-11
 344,QUINTANA ROO,M,60,2020-03-17,confirmado,España,2020-03-15
-345,QUINTANA ROO,M,46,2020-03-15,confirmado,Contacto,NA
+345,QUINTANA ROO,M,46,2020-03-15,confirmado,Contacto,
 346,AGUASCALIENTES,M,18,2020-03-19,confirmado,España,2020-03-16
-347,QUINTANA ROO,F,12,2020-03-15,confirmado,Contacto,NA
+347,QUINTANA ROO,F,12,2020-03-15,confirmado,Contacto,
 348,QUINTANA ROO,F,52,2020-03-17,confirmado,España,2020-03-15
-349,QUINTANA ROO,M,16,2020-03-13,confirmado,Contacto,NA
-350,JALISCO,F,24,2020-03-14,confirmado,Contacto,NA
+349,QUINTANA ROO,M,16,2020-03-13,confirmado,Contacto,
+350,JALISCO,F,24,2020-03-14,confirmado,Contacto,
 351,JALISCO,M,19,2020-03-16,confirmado,España,2020-03-16
 352,MICHOACÁN,F,48,2020-03-15,confirmado,Contacto,2020-03-15
 353,MICHOACÁN,M,58,2020-03-15,confirmado,Contacto,2020-03-15
-354,QUINTANA ROO,M,44,2020-03-14,confirmado,Contacto,NA
+354,QUINTANA ROO,M,44,2020-03-14,confirmado,Contacto,
 355,SAN LUIS POTOSÍ,M,37,2020-03-19,confirmado,Unidos,2020-03-17
 356,SAN LUIS POTOSÍ,F,32,2020-03-18,confirmado,Unidos,2020-03-17
 357,SAN LUIS POTOSÍ,M,38,2020-03-18,confirmado,Unidos,2020-03-17
 358,MICHOACÁN,F,50,2020-03-15,confirmado,Contacto,2020-03-15
 359,MICHOACÁN,M,56,2020-03-15,confirmado,Contacto,2020-03-15
-360,SAN LUIS POTOSÍ,M,70,2020-03-15,confirmado,Contacto,NA
+360,SAN LUIS POTOSÍ,M,70,2020-03-15,confirmado,Contacto,
 361,GUANAJUATO,F,20,2020-03-15,confirmado,España,2020-03-16
 362,GUANAJUATO,F,32,2020-03-16,confirmado,España,2020-03-16
 363,PUEBLA,F,39,2020-03-18,confirmado,Unidos,2020-03-13
 364,NUEVO LEÓN,F,63,2020-03-13,confirmado,Francia,2020-03-14
-365,BAJA CALIFORNIA,M,51,2020-03-21,confirmado,Contacto,NA
-366,GUERRERO,F,36,2020-03-17,confirmado,Contacto,NA
+365,BAJA CALIFORNIA,M,51,2020-03-21,confirmado,Contacto,
+366,GUERRERO,F,36,2020-03-17,confirmado,Contacto,
 367,QUINTANA ROO,F,21,2020-03-18,confirmado,Unidos,2020-03-18
 368,QUINTANA ROO,F,19,2020-03-11,confirmado,Unidos,2020-03-09
 369,QUINTANA ROO,M,48,2020-03-19,confirmado,Contacto,2020-03-13
-370,TAMAULIPAS,M,29,2020-03-20,confirmado,Contacto,NA
+370,TAMAULIPAS,M,29,2020-03-20,confirmado,Contacto,
 371,OAXACA,F,34,2020-03-20,confirmado,Francia,2020-03-17
-372,NUEVO LEÓN,F,30,2020-03-17,confirmado,Contacto,NA
-373,NUEVO LEÓN,M,55,2020-03-18,confirmado,Contacto,NA
-374,NUEVO LEÓN,M,32,2020-03-15,confirmado,Contacto,NA
+372,NUEVO LEÓN,F,30,2020-03-17,confirmado,Contacto,
+373,NUEVO LEÓN,M,55,2020-03-18,confirmado,Contacto,
+374,NUEVO LEÓN,M,32,2020-03-15,confirmado,Contacto,
 375,NUEVO LEÓN,M,35,2020-03-17,confirmado,Unidos,2020-03-15
 376,NUEVO LEÓN,M,39,2020-03-14,confirmado,Contacto,2020-03-13
-377,CIUDAD DE MÉXICO,M,77,2020-03-16,confirmado,Contacto,NA
-378,CIUDAD DE MÉXICO,F,45,2020-03-20,confirmado,Contacto,NA
+377,CIUDAD DE MÉXICO,M,77,2020-03-16,confirmado,Contacto,
+378,CIUDAD DE MÉXICO,F,45,2020-03-20,confirmado,Contacto,
 379,NUEVO LEÓN,M,37,2020-03-17,confirmado,España,2020-03-18
-380,CIUDAD DE MÉXICO,M,52,2020-03-19,confirmado,Contacto,NA
+380,CIUDAD DE MÉXICO,M,52,2020-03-19,confirmado,Contacto,
 381,NUEVO LEÓN,M,40,2020-03-11,confirmado,Unidos,2020-03-09
-382,NUEVO LEÓN,F,66,2020-03-19,confirmado,Contacto,NA
+382,NUEVO LEÓN,F,66,2020-03-19,confirmado,Contacto,
 383,NUEVO LEÓN,M,20,2020-03-15,confirmado,Unidos,2020-03-14
 384,NUEVO LEÓN,M,21,2020-03-14,confirmado,España,2020-03-15
 385,NUEVO LEÓN,F,24,2020-03-17,confirmado,Unidos,2020-03-16
 386,NUEVO LEÓN,M,42,2020-03-13,confirmado,Unidos,2020-03-10
-387,YUCATÁN,M,63,2020-03-08,confirmado,Contacto,NA
+387,YUCATÁN,M,63,2020-03-08,confirmado,Contacto,
 388,NUEVO LEÓN,F,27,2020-03-20,confirmado,Unidos,2020-03-18
 389,NUEVO LEÓN,M,28,2020-03-14,confirmado,Unidos,2020-03-15
 390,NUEVO LEÓN,M,30,2020-03-15,confirmado,Unidos,2020-03-09
@@ -394,10 +394,10 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 393,NUEVO LEÓN,F,27,2020-03-09,confirmado,Italia,2020-03-07
 394,YUCATÁN,M,38,2020-03-08,confirmado,España,2020-03-04
 395,GUERRERO,F,74,2020-03-08,confirmado,España,2020-03-04
-396,PUEBLA,M,51,2020-03-13,confirmado,Contacto,NA
+396,PUEBLA,M,51,2020-03-13,confirmado,Contacto,
 397,PUEBLA,F,66,2020-03-15,confirmado,España,2020-03-09
 398,PUEBLA,M,28,2020-03-16,confirmado,Unidos,2020-03-15
-399,CIUDAD DE MÉXICO,F,47,2020-03-18,confirmado,Contacto,NA
+399,CIUDAD DE MÉXICO,F,47,2020-03-18,confirmado,Contacto,
 400,PUEBLA,M,73,2020-03-16,confirmado,España,2020-03-15
 401,AGUASCALIENTES,F,40,2020-03-18,confirmado,Contacto,2020-03-15
 402,CIUDAD DE MÉXICO,M,76,2020-03-10,confirmado,Francia,2020-03-11
@@ -407,34 +407,34 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 406,AGUASCALIENTES,F,47,2020-03-12,confirmado,Contacto,2020-03-08
 407,CIUDAD DE MÉXICO,M,46,2020-03-17,confirmado,Unidos,2020-03-02
 408,MICHOACÁN,M,49,2020-03-15,confirmado,España,2020-03-15
-409,CIUDAD DE MÉXICO,M,10,2020-03-13,confirmado,Contacto,NA
-410,CIUDAD DE MÉXICO,F,88,2020-03-20,confirmado,Contacto,NA
+409,CIUDAD DE MÉXICO,M,10,2020-03-13,confirmado,Contacto,
+410,CIUDAD DE MÉXICO,F,88,2020-03-20,confirmado,Contacto,
 411,YUCATÁN,M,28,2020-03-19,confirmado,Francia,2020-03-15
 412,YUCATÁN,F,30,2020-03-19,confirmado,Francia,2020-03-18
-413,YUCATÁN,F,40,2020-03-14,confirmado,Contacto,NA
-414,CIUDAD DE MÉXICO,F,79,2020-03-18,confirmado,Contacto,NA
-415,AGUASCALIENTES,M,47,2020-03-18,confirmado,Contacto,NA
-416,CIUDAD DE MÉXICO,M,38,2020-03-10,confirmado,Contacto,NA
+413,YUCATÁN,F,40,2020-03-14,confirmado,Contacto,
+414,CIUDAD DE MÉXICO,F,79,2020-03-18,confirmado,Contacto,
+415,AGUASCALIENTES,M,47,2020-03-18,confirmado,Contacto,
+416,CIUDAD DE MÉXICO,M,38,2020-03-10,confirmado,Contacto,
 417,PUEBLA,F,23,2020-03-11,confirmado,España,2020-03-15
 418,CIUDAD DE MÉXICO,M,64,2020-03-15,confirmado,Francia,2020-03-11
 419,CIUDAD DE MÉXICO,M,76,2020-03-21,confirmado,Contacto,2020-03-21
 420,CHIHUAHUA,F,18,2020-03-21,confirmado,España,2020-03-18
 421,NAYARIT,F,66,2020-03-19,confirmado,Unidos,2020-03-12
-422,MÉXICO,M,67,2020-03-13,confirmado,Contacto,NA
-423,PUEBLA,F,69,2020-03-17,confirmado,Contacto,NA
-424,MÉXICO,F,62,2020-03-13,confirmado,Contacto,NA
-425,PUEBLA,M,72,2020-03-16,confirmado,Contacto,NA
+422,MÉXICO,M,67,2020-03-13,confirmado,Contacto,
+423,PUEBLA,F,69,2020-03-17,confirmado,Contacto,
+424,MÉXICO,F,62,2020-03-13,confirmado,Contacto,
+425,PUEBLA,M,72,2020-03-16,confirmado,Contacto,
 426,PUEBLA,F,38,2020-03-18,confirmado,Unidos,2020-03-18
 427,OAXACA,F,62,2020-03-20,confirmado,Contacto,2020-03-21
-428,OAXACA,M,56,2020-03-20,confirmado,Contacto,NA
-429,OAXACA,F,21,2020-03-19,confirmado,Contacto,NA
+428,OAXACA,M,56,2020-03-20,confirmado,Contacto,
+429,OAXACA,F,21,2020-03-19,confirmado,Contacto,
 430,GUERRERO,F,82,2020-03-23,confirmado,España,2020-03-13
-431,PUEBLA,F,48,2020-03-19,confirmado,Contacto,NA
+431,PUEBLA,F,48,2020-03-19,confirmado,Contacto,
 432,PUEBLA,M,31,2020-03-13,confirmado,España,2020-03-15
-433,PUEBLA,M,26,2020-03-12,confirmado,Contacto,NA
+433,PUEBLA,M,26,2020-03-12,confirmado,Contacto,
 434,YUCATÁN,M,51,2020-03-18,confirmado,España,2020-03-16
 435,YUCATÁN,F,60,2020-03-10,confirmado,Francia,2020-03-19
-436,PUEBLA,M,24,2020-03-20,confirmado,Contacto,NA
+436,PUEBLA,M,24,2020-03-20,confirmado,Contacto,
 437,GUANAJUATO,F,56,2020-03-16,confirmado,Francia,2020-03-17
 438,GUANAJUATO,F,22,2020-03-17,confirmado,España,2020-03-16
 439,GUANAJUATO,M,65,2020-03-20,confirmado,España,2020-03-14
@@ -442,12 +442,12 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 441,GUANAJUATO,M,29,2020-03-16,confirmado,España,2020-03-16
 442,GUANAJUATO,F,41,2020-03-18,confirmado,España,2020-03-16
 443,TABASCO,F,57,2020-03-18,confirmado,España,2020-03-18
-444,HIDALGO,F,16,2020-03-20,confirmado,Contacto,NA
-445,HIDALGO,M,17,2020-03-13,confirmado,Contacto,NA
+444,HIDALGO,F,16,2020-03-20,confirmado,Contacto,
+445,HIDALGO,M,17,2020-03-13,confirmado,Contacto,
 446,GUANAJUATO,M,24,2020-03-15,confirmado,Unidos,2020-03-19
 447,JALISCO,M,36,2020-03-15,confirmado,Unidos,2020-03-08
 448,JALISCO,F,25,2020-03-13,confirmado,Unidos,2020-03-06
-449,CIUDAD DE MÉXICO,F,60,2020-03-14,confirmado,Contacto,NA
+449,CIUDAD DE MÉXICO,F,60,2020-03-14,confirmado,Contacto,
 450,CIUDAD DE MÉXICO,M,28,2020-03-02,confirmado,Unidos,2020-03-15
 451,QUINTANA ROO,M,42,2020-03-21,confirmado,Unidos,2020-03-19
 452,CIUDAD DE MÉXICO,F,53,2020-03-10,confirmado,Francia,2020-03-18
@@ -457,26 +457,26 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 456,CIUDAD DE MÉXICO,M,20,2020-03-16,confirmado,Contacto,2020-03-16
 457,MICHOACÁN,F,49,2020-03-16,confirmado,España,2020-03-15
 458,CIUDAD DE MÉXICO,F,29,2020-03-16,confirmado,Unidos,2020-03-09
-459,TAMAULIPAS,M,75,2020-03-22,confirmado,Contacto,NA
-460,BAJA CALIFORNIA SUR,M,40,2020-03-21,confirmado,Contacto,NA
-461,BAJA CALIFORNIA SUR,F,31,2020-03-21,confirmado,Contacto,NA
+459,TAMAULIPAS,M,75,2020-03-22,confirmado,Contacto,
+460,BAJA CALIFORNIA SUR,M,40,2020-03-21,confirmado,Contacto,
+461,BAJA CALIFORNIA SUR,F,31,2020-03-21,confirmado,Contacto,
 462,JALISCO,M,49,2020-03-12,confirmado,Unidos,2020-03-08
 463,MÉXICO,M,45,2020-03-16,confirmado,Unidos,2020-03-03
-464,CHIAPAS,M,45,2020-03-13,confirmado,Contacto,NA
+464,CHIAPAS,M,45,2020-03-13,confirmado,Contacto,
 465,TLAXCALA,F,19,2020-03-16,confirmado,Unidos,2020-03-21
 466,CIUDAD DE MÉXICO,F,65,2020-03-16,confirmado,España,2020-03-14
-467,CIUDAD DE MÉXICO,F,34,2020-03-19,confirmado,Contacto,NA
+467,CIUDAD DE MÉXICO,F,34,2020-03-19,confirmado,Contacto,
 468,MORELOS,F,35,2020-03-16,confirmado,Unidos,2020-03-16
 469,AGUASCALIENTES,M,53,2020-03-23,confirmado,España,2020-03-23
 470,CIUDAD DE MÉXICO,M,45,2020-03-13,confirmado,España,2020-03-19
-471,BAJA CALIFORNIA,F,50,2020-03-18,confirmado,Contacto,NA
-472,JALISCO,F,33,2020-03-21,confirmado,Contacto,NA
-473,JALISCO,F,20,2020-03-22,confirmado,Contacto,NA
+471,BAJA CALIFORNIA,F,50,2020-03-18,confirmado,Contacto,
+472,JALISCO,F,33,2020-03-21,confirmado,Contacto,
+473,JALISCO,F,20,2020-03-22,confirmado,Contacto,
 474,BAJA CALIFORNIA SUR,M,46,2020-03-21,confirmado,Unidos,2020-03-20
-475,AGUASCALIENTES,F,59,2020-03-23,confirmado,Contacto,NA
-476,HIDALGO,F,24,2020-03-13,confirmado,Contacto,NA
+475,AGUASCALIENTES,F,59,2020-03-23,confirmado,Contacto,
+476,HIDALGO,F,24,2020-03-13,confirmado,Contacto,
 477,QUINTANA ROO,M,20,2020-03-13,confirmado,Unidos,2020-03-21
-478,CIUDAD DE MÉXICO,M,58,2020-03-12,confirmado,Contacto,NA
+478,CIUDAD DE MÉXICO,M,58,2020-03-12,confirmado,Contacto,
 479,PUEBLA,F,31,2020-03-16,confirmado,España,2020-03-15
 480,JALISCO,M,58,2020-03-20,confirmado,España,2020-03-17
 481,MICHOACÁN,F,69,2020-03-15,confirmado,Contacto,2020-03-23
@@ -493,55 +493,55 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 492,MÉXICO,M,69,2020-03-18,confirmado,España,2020-03-15
 493,JALISCO,M,21,2020-03-12,confirmado,Unidos,2020-03-07
 494,HIDALGO,M,71,2020-03-16,confirmado,Unidos,2020-03-13
-495,JALISCO,F,49,2020-03-17,confirmado,Contacto,NA
-496,QUINTANA ROO,M,74,2020-03-15,confirmado,Contacto,NA
+495,JALISCO,F,49,2020-03-17,confirmado,Contacto,
+496,QUINTANA ROO,M,74,2020-03-15,confirmado,Contacto,
 497,QUINTANA ROO,M,51,2020-03-12,confirmado,Unidos,2020-03-09
 498,JALISCO,F,48,2020-03-06,confirmado,Unidos,2020-02-05
-499,JALISCO,F,20,2020-03-16,confirmado,Contacto,NA
+499,JALISCO,F,20,2020-03-16,confirmado,Contacto,
 500,QUERÉTARO,F,46,2020-03-20,confirmado,Francia,2020-03-06
 501,JALISCO,M,72,2020-03-12,confirmado,Unidos,2020-03-06
 502,MÉXICO,F,26,2020-03-18,confirmado,España,2020-03-21
-503,PUEBLA,F,22,2020-03-22,confirmado,Contacto,NA
+503,PUEBLA,F,22,2020-03-22,confirmado,Contacto,
 504,NUEVO LEÓN,F,30,2020-03-18,confirmado,España,2019-03-16
 505,PUEBLA,F,47,2020-03-16,confirmado,Unidos,2020-03-15
-506,PUEBLA,M,42,2020-03-18,confirmado,Contacto,NA
-507,JALISCO,M,50,2020-03-14,confirmado,Contacto,NA
+506,PUEBLA,M,42,2020-03-18,confirmado,Contacto,
+507,JALISCO,M,50,2020-03-14,confirmado,Contacto,
 508,SAN LUIS POTOSÍ,F,33,2020-03-22,confirmado,España,2020-03-14
 509,PUEBLA,M,48,2020-03-16,confirmado,Unidos,2020-03-15
 510,SINALOA,F,30,2020-03-17,confirmado,Unidos,2020-03-15
-511,SINALOA,M,72,2020-03-14,confirmado,Contacto,NA
-512,COAHUILA,M,42,2020-03-19,confirmado,Contacto,NA
-513,NUEVO LEÓN,F,26,2020-03-21,confirmado,Contacto,NA
+511,SINALOA,M,72,2020-03-14,confirmado,Contacto,
+512,COAHUILA,M,42,2020-03-19,confirmado,Contacto,
+513,NUEVO LEÓN,F,26,2020-03-21,confirmado,Contacto,
 514,BAJA CALIFORNIA,F,50,2020-03-15,confirmado,Unidos,2020-03-13
-515,MORELOS,F,61,2020-03-23,confirmado,Contacto,NA
+515,MORELOS,F,61,2020-03-23,confirmado,Contacto,
 516,SONORA,M,44,2020-03-17,confirmado,España,2020-03-10
-517,TABASCO,M,46,2020-03-20,confirmado,Contacto,NA
+517,TABASCO,M,46,2020-03-20,confirmado,Contacto,
 518,NUEVO LEÓN,M,26,2020-03-18,confirmado,España,2020-03-16
 519,NUEVO LEÓN,M,41,2020-03-09,confirmado,Unidos,2020-03-09
 520,SONORA,M,24,2020-03-17,confirmado,Unidos,2020-03-19
 521,NAYARIT,M,53,2020-03-21,confirmado,Contacto,2020-03-24
-522,PUEBLA,M,27,2020-03-23,confirmado,Contacto,NA
-523,PUEBLA,F,35,2020-03-21,confirmado,Contacto,NA
+522,PUEBLA,M,27,2020-03-23,confirmado,Contacto,
+523,PUEBLA,F,35,2020-03-21,confirmado,Contacto,
 524,NAYARIT,M,53,2020-03-24,confirmado,Contacto,2020-03-24
 525,MICHOACÁN,F,62,2020-03-15,confirmado,Contacto,2020-03-15
 526,SONORA,F,50,2020-03-20,confirmado,España,2020-03-16
 527,YUCATÁN,M,53,2020-03-19,confirmado,Contacto,2020-03-12
-528,QUERÉTARO,M,38,2020-03-14,confirmado,Contacto,NA
-529,AGUASCALIENTES,F,74,2020-03-22,confirmado,Contacto,NA
+528,QUERÉTARO,M,38,2020-03-14,confirmado,Contacto,
+529,AGUASCALIENTES,F,74,2020-03-22,confirmado,Contacto,
 530,YUCATÁN,M,23,2020-03-17,confirmado,Francia,2020-03-21
-531,YUCATÁN,M,58,2020-03-20,confirmado,Contacto,NA
+531,YUCATÁN,M,58,2020-03-20,confirmado,Contacto,
 532,YUCATÁN,M,67,2020-03-22,confirmado,Contacto,2020-03-21
-533,SINALOA,M,26,2020-03-20,confirmado,Contacto,NA
+533,SINALOA,M,26,2020-03-20,confirmado,Contacto,
 534,QUERÉTARO,M,23,2020-03-20,confirmado,Unidos,2020-03-17
 535,QUINTANA ROO,M,75,2020-03-25,confirmado,Contacto,2020-03-20
-536,TABASCO,F,28,2020-03-19,confirmado,Contacto,NA
+536,TABASCO,F,28,2020-03-19,confirmado,Contacto,
 537,QUINTANA ROO,F,49,2020-03-20,confirmado,Unidos,2020-03-20
-538,QUERÉTARO,F,62,2020-03-17,confirmado,Contacto,NA
+538,QUERÉTARO,F,62,2020-03-17,confirmado,Contacto,
 539,NUEVO LEÓN,M,40,2020-03-05,confirmado,Unidos,2020-03-10
 540,GUANAJUATO,M,51,2020-03-20,confirmado,España,2020-03-15
 541,GUANAJUATO,F,28,2020-03-20,confirmado,Contacto,2020-03-16
 542,ZACATECAS,F,57,2020-03-12,confirmado,Contacto,2020-02-29
-543,GUANAJUATO,F,59,2020-03-20,confirmado,Contacto,NA
+543,GUANAJUATO,F,59,2020-03-20,confirmado,Contacto,
 544,GUANAJUATO,M,26,2020-03-15,confirmado,España,2020-03-14
 545,BAJA CALIFORNIA,M,25,2020-03-20,confirmado,Contacto,2020-03-21
 546,JALISCO,F,19,2020-03-17,confirmado,Francia,2020-03-11
@@ -549,38 +549,38 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 548,BAJA CALIFORNIA,F,41,2020-03-20,confirmado,Unidos,2020-03-19
 549,BAJA CALIFORNIA SUR,M,44,2020-03-20,confirmado,Unidos,2020-03-14
 550,BAJA CALIFORNIA,M,30,2020-03-16,confirmado,España,2020-03-18
-551,PUEBLA,M,50,2020-03-22,confirmado,Contacto,NA
-552,BAJA CALIFORNIA,F,64,2020-03-13,confirmado,Contacto,NA
+551,PUEBLA,M,50,2020-03-22,confirmado,Contacto,
+552,BAJA CALIFORNIA,F,64,2020-03-13,confirmado,Contacto,
 553,BAJA CALIFORNIA SUR,M,66,2020-03-22,confirmado,Unidos,2020-03-15
 554,PUEBLA,F,60,2020-03-16,confirmado,Unidos,2020-03-11
-555,TABASCO,F,26,2020-03-16,confirmado,Contacto,NA
-556,TABASCO,F,53,2020-03-21,confirmado,Contacto,NA
-557,TABASCO,M,31,2020-03-21,confirmado,Contacto,NA
-558,TABASCO,F,29,2020-03-13,confirmado,Contacto,NA
-559,TABASCO,M,67,2020-03-19,confirmado,Contacto,NA
-560,PUEBLA,M,44,2020-03-18,confirmado,Contacto,NA
+555,TABASCO,F,26,2020-03-16,confirmado,Contacto,
+556,TABASCO,F,53,2020-03-21,confirmado,Contacto,
+557,TABASCO,M,31,2020-03-21,confirmado,Contacto,
+558,TABASCO,F,29,2020-03-13,confirmado,Contacto,
+559,TABASCO,M,67,2020-03-19,confirmado,Contacto,
+560,PUEBLA,M,44,2020-03-18,confirmado,Contacto,
 561,PUEBLA,M,27,2020-03-23,confirmado,Unidos,2020-03-18
-562,TABASCO,M,31,2020-03-17,confirmado,Contacto,NA
-563,TABASCO,F,58,2020-03-18,confirmado,Contacto,NA
-564,MÉXICO,F,68,2020-03-17,confirmado,Contacto,NA
-565,MÉXICO,F,49,2020-03-02,confirmado,Contacto,NA
-566,MÉXICO,F,22,2020-03-24,confirmado,Contacto,NA
+562,TABASCO,M,31,2020-03-17,confirmado,Contacto,
+563,TABASCO,F,58,2020-03-18,confirmado,Contacto,
+564,MÉXICO,F,68,2020-03-17,confirmado,Contacto,
+565,MÉXICO,F,49,2020-03-02,confirmado,Contacto,
+566,MÉXICO,F,22,2020-03-24,confirmado,Contacto,
 567,MÉXICO,F,22,2020-03-16,confirmado,Contacto,2020-03-15
 568,MÉXICO,M,36,2020-03-16,confirmado,España,2020-03-03
-569,MÉXICO,F,33,2020-03-12,confirmado,Contacto,NA
-570,MÉXICO,M,37,2020-03-21,confirmado,Contacto,NA
+569,MÉXICO,F,33,2020-03-12,confirmado,Contacto,
+570,MÉXICO,M,37,2020-03-21,confirmado,Contacto,
 571,HIDALGO,F,49,2020-03-23,confirmado,Contacto,2020-03-23
-572,MÉXICO,F,36,2020-03-16,confirmado,Contacto,NA
-573,MÉXICO,F,31,2020-03-21,confirmado,Contacto,NA
-574,MÉXICO,F,48,2020-03-16,confirmado,Contacto,NA
-575,MÉXICO,M,60,2020-03-20,confirmado,Contacto,NA
-576,MÉXICO,F,33,2020-03-22,confirmado,Contacto,NA
-577,SAN LUIS POTOSÍ,M,56,2020-03-13,confirmado,Contacto,NA
-578,MÉXICO,F,33,2020-03-10,confirmado,Contacto,NA
-579,TABASCO,M,26,2020-03-09,confirmado,Contacto,NA
-580,MÉXICO,F,28,2020-03-21,confirmado,Contacto,NA
-581,MÉXICO,F,43,2020-03-23,confirmado,Contacto,NA
-582,MÉXICO,F,46,2020-03-23,confirmado,Contacto,NA
-583,MÉXICO,F,28,2020-03-16,confirmado,Contacto,NA
-584,MÉXICO,F,31,2020-03-19,confirmado,Contacto,NA
-585,MÉXICO,M,41,2020-03-24,confirmado,Contacto,NA
+572,MÉXICO,F,36,2020-03-16,confirmado,Contacto,
+573,MÉXICO,F,31,2020-03-21,confirmado,Contacto,
+574,MÉXICO,F,48,2020-03-16,confirmado,Contacto,
+575,MÉXICO,M,60,2020-03-20,confirmado,Contacto,
+576,MÉXICO,F,33,2020-03-22,confirmado,Contacto,
+577,SAN LUIS POTOSÍ,M,56,2020-03-13,confirmado,Contacto,
+578,MÉXICO,F,33,2020-03-10,confirmado,Contacto,
+579,TABASCO,M,26,2020-03-09,confirmado,Contacto,
+580,MÉXICO,F,28,2020-03-21,confirmado,Contacto,
+581,MÉXICO,F,43,2020-03-23,confirmado,Contacto,
+582,MÉXICO,F,46,2020-03-23,confirmado,Contacto,
+583,MÉXICO,F,28,2020-03-16,confirmado,Contacto,
+584,MÉXICO,F,31,2020-03-19,confirmado,Contacto,
+585,MÉXICO,M,41,2020-03-24,confirmado,Contacto,

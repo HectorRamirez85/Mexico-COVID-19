@@ -1,4 +1,4 @@
-Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regreso
+Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_llegada
 1,CIUDAD DE MÉXICO,M,35,2020-02-22,confirmado,Italia,2020-02-22
 2,SINALOA,M,41,2020-02-22,recuperado,Italia,2020-02-21
 3,CIUDAD DE MÉXICO,M,59,2020-02-23,confirmado,Italia,2020-02-22
@@ -13,11 +13,11 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 12,NUEVO LEÓN,M,57,2020-03-04,confirmado,Alemania,2020-03-03
 13,MÉXICO,F,55,2020-03-09,confirmado,España,2020-03-09
 14,DURANGO,M,58,2020-03-06,confirmado,España,2020-02-28
-15,QUERÉTARO,F,65,2020-03-10,confirmado,Contacto,NA
+15,QUERÉTARO,F,65,2020-03-10,confirmado,Contacto,
 16,QUERÉTARO,M,42,2020-03-05,confirmado,Italia,2020-03-05
 17,CIUDAD DE MÉXICO,M,48,2020-03-10,confirmado,España,2020-03-09
 18,CIUDAD DE MÉXICO,M,38,2020-03-10,confirmado,España,2020-03-09
-19,QUERÉTARO,F,43,2020-03-11,confirmado,Contacto,NA
+19,QUERÉTARO,F,43,2020-03-11,confirmado,Contacto,
 20,PUEBLA,M,31,2020-03-05,confirmado,España,2020-03-09
 21,CIUDAD DE MÉXICO,M,37,2020-03-11,confirmado,Italia,2020-03-11
 22,YUCATÁN,F,57,2020-03-07,confirmado,España,2020-03-06
@@ -37,6 +37,6 @@ Número_caso,Estado,Sexo,Edad,Fecha_síntomas,Situación,País_fuente,Fecha_regr
 36,CIUDAD DE MÉXICO,M,72,2020-03-09,confirmado,Estados Unidos,2020-03-07
 37,CIUDAD DE MÉXICO,M,41,2020-03-10,confirmado,España,2020-03-08
 38,PUEBLA,M,30,2020-03-09,confirmado,España,2020-03-09
-39,CIUDAD DE MÉXICO,M,38,2020-03-11,confirmado,Contacto,NA
+39,CIUDAD DE MÉXICO,M,38,2020-03-11,confirmado,Contacto,
 40,OAXACA,F,30,2020-03-09,confirmado,España,2020-03-09
 41,OAXACA,M,61,2020-03-10,confirmado,Estados Unidos,2020-03-10

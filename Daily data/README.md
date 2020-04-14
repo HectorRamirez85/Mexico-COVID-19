@@ -1,11 +1,11 @@
 # Casos y fallecimientos  diarios / Daily cases and deaths
 
-Última actualización: 2020-04-07 T 19:48:00-06:00
+Última actualización: 2020-04-13 T 21:12:00-05:00
 
 ## Español
 
 Listado acumulado de los fallecimientos por día y por estado a partir del reporte del primer caso confirmado. (```fallecidos_{fecha}.csv```).
-Listado de casos sopechosos bajo consideración por día y por estado a partir del 14 de Marzo. (No se cuentan con las listas de días anteriores. A partir del 23 de Marzo, se lista la localidad de los casos en las tablas oficiales.) (```sospechosos_{fecha}.csv```)
+Listado de casos sopechosos bajo consideración por día y por estado a partir del 14 de Marzo. (No se cuentan con las listas de días anteriores. A partir del 23 de Marzo, algunos días se lista la localidad de los casos en las tablas oficiales.) (```sospechosos_{fecha}.csv```)
 
 Listado de casos confirmados acumulados  por día, con edad, inicio de sintomatología y tipo de caso (importado/contacto). (```positivos_{fecha}.csv```)
 **Anterior** al 23 de marzo, adicionalmente, situación del paciente (confirmado/recuperado/fallecido). (El desglose de los casos recuperados ya no se reporta en los CTD. La situación de los pacientes no es listada en las tablas oficiales).
@@ -18,7 +18,7 @@ Un trabajo similar está disponible [aquí](https://github.com/guzmart/covid19_m
 ## English
 
 Listing of cumulative deaths per day and state from the date of the first confirmed case. (```fallecidos_{date}.csv```).
-Listing of suspected cases under consideration per day and state from March 14 onwards. (The tables from before that date are not longer available. From March 23 onwards, the third order locality of the cases is reported in the tables.) (```sospechosos_{date}.csv```)
+Listing of suspected cases under consideration per day and state from March 14 onwards. (The tables from before that date are not longer available. From March 23 onwards, the third order locality of the cases is sometimes reported in the tables.) (```sospechosos_{date}.csv```)
 
 Listing of cumulative confirmed cases by day, with age, day of initial and type of case (imported/contact). (```positivos_{date}.csv```)
 **Before** March 23 the situation of the patient (confirmed/recovered/dead) is aditionally reported. (The details of the recovered cases are no longer reported in the CTDs. The situation of the patients are not listed in the official tables.)

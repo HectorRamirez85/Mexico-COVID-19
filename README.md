@@ -1,6 +1,13 @@
 # Base de datos de casos de COVID-19 reportados en México / Database of reported cases of COVID-19 in Mexico.
 
-Última actualización/Last update: 2020-04-13 T 21:12:00-05:00
+Última actualización/Last update: 2020-04-14 T 20:10:00-05:00
+
+**Nota/Note:**
+
+2020-04-14: Existe una discrepancia de una defunción (y por ende un caso positivo) en el estado de Duarango entre el día de ayer y el día de hoy en los Comunicados Técnicos Diarios (y las tablas de casos sospechosos y positivos).
+
+2020-04-14: A inconsistency of one death (and thus one positive case) in Durango between yesterday and today in the Daily Technical Communiqués (and in the respective suspect and positive cases tables).
+
 
 **Nota/Note:**
 

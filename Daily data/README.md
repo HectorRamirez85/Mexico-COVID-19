@@ -1,6 +1,6 @@
 # Casos y fallecimientos  diarios / Daily cases and deaths
 
-Última actualización: 2020-04-13 T 21:12:00-05:00
+Última actualización: 2020-04-14 T 20:10:00-05:00
 
 ## Español
 

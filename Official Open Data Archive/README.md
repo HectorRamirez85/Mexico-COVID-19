@@ -1,6 +1,6 @@
 # Archivo  de datos abiertos oficiales/Official open data archive:
 
-Última actualización/Last update: 2020-04-13
+Última actualización/Last update: 2020-04-14
 
 El 2020-04-13 la SSa publicó por primera vez, hasta dónde conozco, datos abiertos en ```.csv``` respecto a COVID-19 en el país.
 Esta sección del repositorio se dedicará a archivar dichos datos, disponibles [aquí](https://www.gob.mx/salud/documentos/datos-abiertos-152127).
